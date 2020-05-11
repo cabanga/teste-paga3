@@ -1,0 +1,158 @@
+.product-four {
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-profile-four {
+  min-height: 78vh;
+  border-radius: 5px;
+  padding: 3em 6em 0 2em;
+  background-color: #222222;
+}
+
+.product-content-four span {
+  color: #F1F3F6;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.product-content-four h1 {
+  font-size: 12px;
+  margin-top: 8px;
+  padding: .75em;
+  color: #5CA2D5;
+  background-color: #000000;
+}
+
+.product-content-four p {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #F1F3F6;
+}
+
+.product-content-four img {
+  width: 155px;
+  height: 155px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-menu-four {
+  margin-top: 30px;
+}
+
+.product-menu-four ul {
+  display: block;
+}
+
+.product-menu-four ul li {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.product-menu-four ul li a {
+  color: #F1F3F6;
+}
+
+.product-menu-four ul li a:hover {
+  color: #5CA2D5;
+}
+
+.btn-back-four p a {
+  font-size: 21px;
+  color: #F1F3F6;
+}
+
+.main-notification {
+  display: flex;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: .65em;
+  background-color: #5CA2D5;
+}
+
+.main-notification h2 {
+  font-size: 18px;
+  color: #F1F3F6;
+}
+
+.main-notification .time-icon {
+  color: #F1F3F6;
+  font-size: 25px;
+}
+
+.main-four {
+  padding: 2em;
+  width: 80%;
+}
+
+.main-content-four {
+  margin-top: 30px;
+}
+
+.main-content-four h1 {
+  color: #5CA2D5;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.main-content-four h3 {
+  color: #FFFFFF;
+  font-size: 21px;
+}
+
+.main-form-four {
+  padding: .75em;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.main-form-four form {
+  max-width: 275px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.main-form-four form input {
+  background-color: #F1F3F6;
+  min-width: 275px;
+  border-radius: 5px;
+  border: 0;
+  padding: 1em;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.main-form-four form input:hover {
+  border: 1px solid #F94545;
+}
+
+.main-form-four img {
+  height: 165px;
+  width: 165px;
+  border-radius: 5px;
+}
+
+.btn-product-four {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn-product-four input {
+  padding: 1em;
+  background-color: #5CA2D5;
+  border: 0;
+  border-radius: 5px;
+  color: #F1F3F6;
+  font-size: 14px;
+  cursor: pointer;
+}

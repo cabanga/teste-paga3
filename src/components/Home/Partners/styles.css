@@ -1,0 +1,23 @@
+.partners {
+  text-align: center;
+  padding: 30px;
+}
+
+.partners h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #0D558A;
+  margin-bottom: 20px;
+}
+
+.partner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.partner ul li {
+  margin-right: 20px;
+  color: #A0A0A0;
+  font-size: 24px;
+}

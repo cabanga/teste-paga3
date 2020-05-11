@@ -1,0 +1,164 @@
+.product-two {
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-profile-two {
+  min-height: 78vh;
+  border-radius: 5px;
+  padding: 3em 6em 0 2em;
+  background-color: #222222;
+}
+
+.product-content-two span {
+  color: #F1F3F6;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.product-content-two h1 {
+  font-size: 12px;
+  margin-top: 8px;
+  padding: .75em;
+  color: #5CA2D5;
+  background-color: #000000;
+}
+
+.product-content-two p {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #F1F3F6;
+}
+
+.product-content-two img {
+  width: 155px;
+  height: 155px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-menu-two {
+  margin-top: 30px;
+}
+
+.product-menu-two ul {
+  display: block;
+}
+
+.product-menu-two ul li {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.product-menu-two ul li a {
+  color: #F1F3F6;
+}
+
+.product-menu-two ul li a:hover {
+  color: #5CA2D5;
+}
+
+.main-two {
+  padding: 2em;
+  width: 80%;
+}
+
+.main-content-two {
+  margin-top: 30px;
+}
+
+.main-content-two h1 {
+  color: #5CA2D5;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.main-content-two h3 {
+  color: #FFFFFF;
+  font-size: 21px;
+}
+
+.main-form-two {
+  padding: .75em;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.main-form-two form {
+  max-width: 275px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.main-form-two p {
+  
+}
+
+.main-form-two label {
+  color: #A0A0A0;
+  font-size: 16px;
+}
+
+.main-form-two form input {
+  background-color: #F1F3F6;
+  min-width: 275px;
+  border-radius: 5px;
+  border: 0;
+  padding: 1em;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.main-form-two form input:hover {
+  border: 1px solid #F94545;
+}
+
+.main-form-two img {
+  height: 275px;
+  width: 275px;
+  border-radius: 5px;
+}
+
+.main-search {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-search input:first-child {
+  padding: 1em;
+  min-width: 245px;
+  border: 0;
+  background-color: #222222;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #FFFFFF;
+}
+
+.main-search input:last-child {
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  color: #5CA2D5;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn-product-two {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-product-two input {
+  padding: 1em;
+  background-color: #5CA2D5;
+  border: 0;
+  border-radius: 5px;
+  color: #F1F3F6;
+  font-size: 14px;
+  cursor: pointer;
+}
