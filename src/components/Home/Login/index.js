@@ -39,7 +39,10 @@ export default function Login() {
               consectetur adipisicing elit
             </p>
             <div className="sign-button">
-              <Link to="/register">Crie sua conta</Link>
+              <Link to="/register">Conta cliente</Link>
+            </div>
+            <div className="sign-button">
+              <Link to="/registerseller">Conta vendedor</Link>
             </div>
           </section>
           <section className="login-form">
