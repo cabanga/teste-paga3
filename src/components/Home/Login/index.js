@@ -19,7 +19,7 @@ export default function Login() {
       localStorage.setItem('userLogin', email, password);
       localStorage.setItem('userName', responseUser.data.firstName);
 
-      history.push('/editprofile');
+      history.push('/dashboardwelcome');
       alert('Login feito com sucesso');
     } catch (err) {
       alert('Erro ao fazer login, tente novamente')
