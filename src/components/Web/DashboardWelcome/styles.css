@@ -1,31 +1,16 @@
-.dash-content {
+.dashboardContainer {
   display: flex;
   flex-direction: row;
 }
 
-.dashgrid {
-  width: 50%;
-}
-
-.dashflex {
+.dashboardFlex {
   padding: 2em;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.dashflex img {
-  width: 35px;
-  height: 35px;
-  border-radius: 10px;
-  margin: 0 10px;
-}
-
-.dashgray {
-  background-color: #F1F3F6;
-}
-
-.shopping {
+.dashboardShopping {
   background-color: #5CA2D5;
   padding: 1em;
   border-radius: 10px;
@@ -33,18 +18,18 @@
   text-align: center;
 }
 
-.shopping h1 {
+.dashboardShopping h1 {
   color: #FFFFFF;
   font-size: 21px;
   font-weight: bold;
 }
 
-.shopping-icon {
+.shoppingIcon {
   color: #FFFFFF;
   font-size: 75px;
 }
 
-.notification {
+.dashboardNotification {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,7 +38,7 @@
   opacity: 0.5;
 }
 
-.notification-card {
+.notificationCard {
   background-color: #F1F3F6;
   padding: 1em;
   border-radius: 10px;
@@ -61,145 +46,116 @@
   margin-top: 10px;
 }
 
-.notification-card span {
+.notificationCard span {
   color: #91CCF4;
   font-size: 14px;
 }
 
-.notification-card p {
+.notificationCard p {
   color: #0D55BA;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.notification-card:hover {
+.notificationCard:hover {
   background-color: #5CA2D5;
 }
 
-.notification .chevron {
+.dashboardNotification .notificationChevron {
   margin-right: 155px;
 }
 
-.dash h1 {
+.dashboard h1 {
   color: #0D55BA;
   font-size: 37px;
   font-weight: bold;
 }
 
-.dash h3 {
+.dashboard h3 {
   color: #141414;
   font-size: 18px;
 }
 
-.dash ul {
+.dashboard ul {
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
 }
 
-.dash ul li {
+.dashboard ul li {
   padding: .65em;
   background-color: #F1F3F6;
   border-radius: 5px;
   margin-right: 20px;
 }
 
-.dash ul li:hover {
+.dashboard ul li:hover {
   background-color: #5CA2D5;
 }
 
-.dash ul li a {
+.dashboard ul li a {
   color: #91CCF4;
   font-size: 14px;
 }
 
-.dash-card {
-  background-color: #F1F3F6;
+.dashboardWelcome {
+  text-align: center;
   padding: 1em;
-  border-radius: 10px;
-  max-width: 25em;
-  margin-top: 10px;
+  background-color: #F1F3F6;
+  border-radius: 5px;
 }
 
-.dash-card span {
-  color: #A0A0A0;
-  font-size: 14px;
-}
-
-.dash-card p {
-  margin-bottom: 10px;
-  color: #141414;
+.dashboardWelcome h1 {
+  margin: 20px;
+  color: #5CA2D5;
+  font-size: 50px;
   font-weight: bold;
-  font-size: 16px;
 }
 
-.dash-profile {
+.dashboardWelcome p {
+  color: #141414;
+  font-size: 18px;
+}
+
+.dashboardProfile {
+  padding: 2em;
+  width: 40%;
+}
+
+.dashboardProfileInfo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 195px;
-  color: #141414;
-  margin-bottom: 40px;
+  justify-content: space-around;
+  margin-bottom: 515px;
 }
 
-.dashgray h2 {
-  color: #0D55BA;
-  font-size: 37px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.dashgray h4 {
-  color: #0D55BA;
-  opacity: 0.5;
+.dashboardProfileInfo p {
   font-size: 16px;
-  margin-bottom: 20px;
 }
 
-.dash-info {
-  background-color: #FFFFFF;
-  padding: 1em;
-  max-width: 25em;
-  display: flex;
-  justify-content: center;
+.userIcon {
+  background-color: #5CA2D5;
+  padding: .65em;
+  border-radius: 10px;
 }
 
-.dash-info-card {
-  margin: 20px;
-  color: #0D55BA;
+.userAlt {
+  color: #FFFFFF;
+  font-size: 24px;
 }
 
-.dash-info-bank {
-  margin-top: 20px;
-  background-color: #FFFFFF;
-  padding: 1em;
-  max-width: 25em;
-}
-
-.dash-info-bank span {
-  color: #5CA2D5;
-  opacity: 0.5;
-  font-size: 14px;
-}
-
-.dash-info-bank p {
-  margin-bottom: 10px;
-  color: #0D55BA;
-}
-
-.btn-out {
+.btn-home {
   text-align: center;
-  margin-top: 30px;
 }
 
-.btn-red {
-  padding: 1em 4em;
+.btn-sair {
+  padding: 1em 4.5em;
   background-color: #F94545;
   border-radius: 5px;
   border: none;
-  max-width: 15em;
   text-align: center;
+  color: #FFFFFF;
   cursor: pointer;
   transition: transform ease-in 0.1s,
-    box-shadow ease-in 0.25s;
+  box-shadow ease-in 0.25s;
 }
