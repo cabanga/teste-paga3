@@ -31,7 +31,7 @@ function Register() {
 
       alert(`Registro realizado com sucesso`);
 
-      history.push('/login');
+      history.push('/loginseller');
     } catch (err) {
       alert('Erro no cadastro, tente novamente');
     }
@@ -52,7 +52,7 @@ function Register() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit 
         </p>
         <div className="login-button">
-          <Link to="/login">Já tenho conta</Link>
+          <Link to="/loginseller">Já tenho conta</Link>
         </div>
       </section>  
       <section className="register-form">

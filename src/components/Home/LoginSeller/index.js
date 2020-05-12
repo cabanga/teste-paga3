@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import api from '../../../services/api';
 import './styles.css';
 
-export default function Login() {
+export default function LoginSeller() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -14,12 +14,15 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const responseUser = await api.post('usersessions', { email, password });
+      const responseSeller = await api.post('sellersessions', {
+        email,
+        password
+      });
 
-      localStorage.setItem('userLogin', email, password);
-      localStorage.setItem('userName', responseUser.data.firstName);
+      localStorage.setItem('sellerLogin', email, password);
+      localStorage.setItem('sellernName', responseSeller.data.name);
 
-      history.push('/editprofile');
+      history.push('/product');
       alert('Login feito com sucesso');
     } catch (err) {
       alert('Erro ao fazer login, tente novamente')
@@ -41,7 +44,7 @@ export default function Login() {
               consectetur adipisicing elit
             </p>
             <div className="sign-button">
-              <Link to="/register">Criar uma conta</Link>
+              <Link to="/registerseller">Criar uma conta</Link>
             </div>
           </section>
           <section className="login-form">
