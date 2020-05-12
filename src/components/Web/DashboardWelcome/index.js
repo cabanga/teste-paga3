@@ -15,16 +15,16 @@ function Dashboard() {
         <aside className="dashboardFlex">
           <Link to="/requestempty" className="dashboardShopping">
             <FaShoppingBasket className="shoppingIcon" />
-            <h1>Fazer compra</h1>
+            <h1>Comprar</h1>
           </Link>
-          <section className="dashboardNotification">
+          {/** <section className="dashboardNotification">
             <h3>Notificações</h3>
             <FaChevronDown className="notificationChevron" />
           </section>
           <section className="notificationCard">
             <span>12 Ago 2020</span>
             <p>Nova compra efetuada no valor de 30.000 kz</p>
-          </section>
+          </section> **/}
       </aside>
 
         <main className="dashboardFlex">
@@ -47,12 +47,12 @@ function Dashboard() {
       </main>
 
       <aside className="dashboardProfile">
-        <section className="dashboardProfileInfo">
+        <Link to="/editprofile" className="dashboardProfileInfo">
           <p>Debora Leandro</p>
           <div className="userIcon">
             <FaUserAlt className="userAlt" />
           </div>
-        </section>
+        </Link>
       </aside>
     </div> 
   )
