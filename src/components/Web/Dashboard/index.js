@@ -62,11 +62,11 @@ function Dashboard() {
       </main>  
       
         <aside className="dashflex dashgray dashgrid">
-          <div className="dash-profile">
+          <Link to="/editprofile" className="dash-profile">
             <p>Debora Leandro</p>
             <img className="profile" src={Woman} alt="Perfil" />
             <span className="time-icon"><FaTimes /></span>  
-          </div>
+          </Link>
       
         <h2>Debora Emanuel Leandro</h2>
         <h4>Conta Verificada</h4>

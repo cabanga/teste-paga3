@@ -1,144 +1,37 @@
 .dashboardContainer {
   display: flex;
-  flex-direction: row;
-}
-
-.dashboardFlex {
-  padding: 2em;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.dashboardShopping {
-  background-color: #5CA2D5;
-  padding: 1em 5em 1em 5em;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.dashboardShopping h1 {
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.shoppingIcon {
-  color: #FFFFFF;
-  font-size: 75px;
-}
-
-.dashboardNotification {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 60px;
-  color: #A0A0A0;
-  opacity: 0.5;
-}
-
-.notificationCard {
-  background-color: #F1F3F6;
-  padding: 1em;
-  border-radius: 10px;
-  max-width: 15em;
-  margin-top: 10px;
-}
-
-.notificationCard span {
-  color: #91CCF4;
-  font-size: 14px;
-}
-
-.notificationCard p {
-  color: #0D55BA;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.notificationCard:hover {
-  background-color: #5CA2D5;
-}
-
-.dashboardNotification .notificationChevron {
-  margin-right: 155px;
-}
-
-.dashboard h1 {
-  color: #0D55BA;
-  font-size: 37px;
-  font-weight: bold;
-}
-
-.dashboard h3 {
-  color: #141414;
-  font-size: 18px;
-}
-
-.dashboard ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-}
-
-.dashboard ul li {
-  padding: .65em;
-  background-color: #F1F3F6;
-  border-radius: 5px;
-  margin-right: 20px;
-}
-
-.dashboard ul li:hover {
-  background-color: #5CA2D5;
-}
-
-.dashboard ul li a {
-  color: #91CCF4;
-  font-size: 14px;
+  justify-content: space-around;
 }
 
 .dashboardWelcome {
   text-align: center;
-  padding: 1em;
-  background-color: #F1F3F6;
-  border-radius: 5px;
+  padding: 4em;
 }
 
 .dashboardWelcome h1 {
-  margin: 20px;
+  margin-top: 20px;
   color: #5CA2D5;
   font-size: 50px;
   font-weight: bold;
 }
 
+.dashboardWelcome h2 {
+  color: #5CA2D5;
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .dashboardWelcome p {
   color: #141414;
-  font-size: 18px;
+  font-size: 21px;
+  margin-bottom: 30px;
 }
 
-.dashboardProfile {
-  padding: 2em;
-  width: 40%;
-}
-
-.dashboardProfileInfo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 515px;
-}
-
-.dashboardProfileInfo p {
-  font-size: 16px;
-}
-
-.userIcon {
+.dashboardWelcome .profileBtn {
+  padding: 1em;
+  border-radius: 5px;
   background-color: #5CA2D5;
-  padding: .65em;
-  border-radius: 10px;
-}
-
-.userAlt {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 18px;
 }
