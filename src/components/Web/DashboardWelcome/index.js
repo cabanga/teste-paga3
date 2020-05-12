@@ -53,9 +53,6 @@ function Dashboard() {
             <FaUserAlt className="userAlt" />
           </div>
         </section>
-        <section className="btn-home">
-          <Link className="btn-sair" to="/">Sair</Link>
-        </section> 
       </aside>
     </div> 
   )

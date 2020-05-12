@@ -143,19 +143,3 @@
   color: #FFFFFF;
   font-size: 24px;
 }
-
-.btn-home {
-  text-align: center;
-}
-
-.btn-sair {
-  padding: 1em 4.5em;
-  background-color: #F94545;
-  border-radius: 5px;
-  border: none;
-  text-align: center;
-  color: #FFFFFF;
-  cursor: pointer;
-  transition: transform ease-in 0.1s,
-  box-shadow ease-in 0.25s;
-}
