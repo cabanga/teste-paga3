@@ -25,12 +25,8 @@ function RequestEmpty() {
               <p>250.000,00 AOA</p>
               <li>Loja</li>
               <p>NCR Angola</p>
-
-              <select name="product" id="product">
-                <option value="prestacoes">Número de prestações</option>
-                <option value="tres">3</option>
-                <option value="seis">6</option>  
-            </select>   
+              <li>Número de prestações</li>
+              <p>3</p>  
             </ul> 
           </div>         
           <button>Adicionar</button>
