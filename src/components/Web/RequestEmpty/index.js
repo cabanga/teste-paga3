@@ -7,16 +7,16 @@ import './styles.css';
 
 function RequestEmpty() {
   return (
-    <div className="product-container">
-    <div className="product-content">
-      <section className="product-cards">
+    <div className="productContainer">
+    <div className="productContent">
+      <section className="productCards">
         <h1><Link to="/">Home</Link></h1>
         
-        <div className="product-card">
+        <div className="productCard">
           <h1>Encontre o seu produto pelo código</h1>
           <input type="text" placeholder="Código"/>  
             
-          <div className="card-content">
+          <div className="cardContent">
             <img src={Computer} alt="Computador" />
             <ul>
               <li>Nome do produto</li>
@@ -37,7 +37,7 @@ function RequestEmpty() {
         </div>
       </section>
         
-      <section className="product-info">
+      <section className="productInfo">
         <h1>Lista de Produtos</h1>
         <img src={Fall} alt="Women" />
         <h2>Aqui estará sua lista de produtos</h2>

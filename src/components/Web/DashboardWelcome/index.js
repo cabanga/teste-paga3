@@ -13,10 +13,10 @@ function Dashboard() {
   return (
     <div className="dashboardContainer">
         <aside className="dashboardFlex">
-          <section className="dashboardShopping">
+          <Link to="/requestempty" className="dashboardShopping">
             <FaShoppingBasket className="shoppingIcon" />
             <h1>Fazer compra</h1>
-          </section>
+          </Link>
           <section className="dashboardNotification">
             <h3>Notificações</h3>
             <FaChevronDown className="notificationChevron" />
