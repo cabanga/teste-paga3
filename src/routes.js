@@ -17,7 +17,9 @@ import ProductFour from './components/Web/ProductFour/';
 import ProductFive from './components/Web/ProductFive/';
 import About from './components/Home/About/';
 import Login from './components/Home/Login/';
+import LoginSeller from './components/Home/LoginSeller/';
 import Register from './components/Home/Register/';
+import RegisterSeller from './components/Home/RegisterSeller/';
 import Main from './components/Home/Main';
 import ScrollToTop from './components/Home/ScrollTop'
 
@@ -29,7 +31,9 @@ export default props => (
         <Route exact path="/contacts" component={Contacts} />
         <Route exact path="/about" component={About} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/loginseller" component={LoginSeller} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/registerseller" component={RegisterSeller} />
         <Route exact path="/request" component={Request} />
         <Route exact path="/requestempty" component={RequestEmpty} />
         <Route exact path="/editprofile" component={EditProfile} />

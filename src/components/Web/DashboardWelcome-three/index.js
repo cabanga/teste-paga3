@@ -64,7 +64,7 @@ function Dashboard() {
         <aside className="dashflex dashgray dashgrid">
           <div className="dash-profile">
             <p>Debora Leandro</p>
-            <img src={Woman} alt="Perfil" />
+            <img className="profile" src={Woman} alt="Perfil" />
             <span className="time-icon"><FaTimes /></span>  
           </div>
       
