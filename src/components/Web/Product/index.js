@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Woman from '../../../assets/woman.jpg';
-import Computer from '../../../assets/pc.jpeg';
 import './styles.css';
 
 function Product() {
