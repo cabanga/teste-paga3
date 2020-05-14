@@ -89,11 +89,7 @@ function Dashboard() {
         <h4>Conta Verificada</h4>
         <section className="dash-info">
           <div className="dash-info-card">
-            <h3>Salário</h3>
-            <p>AOA 200.000,00</p>
-          </div>
-          <div className="dash-info-card">
-            <h3>Limite</h3>
+            <h3>Meu Salário</h3>
             <p>AOA 200.000,00</p>
           </div>
         </section>
