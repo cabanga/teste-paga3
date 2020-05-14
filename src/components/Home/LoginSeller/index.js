@@ -12,6 +12,8 @@ export default function LoginSeller() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setEmail('');
+    setPassword('');
 
     try {
       const responseSeller = await api.post('sellersessions', {

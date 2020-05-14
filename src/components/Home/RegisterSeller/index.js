@@ -17,6 +17,12 @@ function Register() {
   async function handleRegister(e) {
     e.preventDefault();
 
+    setName('');
+    setEmail('');
+    setPassword('');
+    setIban('');
+    setAddress('');
+
     const data = {
       name,
       email,
