@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  FaTimes,
   FaShoppingBasket
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -79,12 +78,13 @@ function Dashboard() {
       </main>  
       
       <aside className="profile profileAside">
-        <Link to="/editprofile" className="profileLink">
-          <p>Debora Leandro</p>
-          <img className="profileImg" src={Woman} alt="Perfil" />
-          <span className="timeIcon"><FaTimes /></span>  
+        <div className="profileLink">
+          <img src={Woman} alt="Perfil" />
+        </div>
+        <Link to="/editprofile">
+          Editar perfil    
         </Link>
-      
+
         <h2>Debora Emanuel Leandro</h2>
         <h4>Conta Verificada</h4>
         <section className="dash-info">
