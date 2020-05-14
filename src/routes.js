@@ -7,8 +7,6 @@ import RequestEmpty from './components/Web/RequestEmpty/';
 import EditProfile from './components/Web/Edit-profile/';
 import Dashboard from './components/Web/Dashboard/';
 import DashboardWelcome from './components/Web/DashboardWelcome/';
-import DashboardWelcomeTwo from './components/Web/DashboardWelcome-two/';
-import DashboardWelcomeThree from './components/Web/DashboardWelcome-three/';
 import Product from './components/Web/Product/';
 import ProductOne from './components/Web/ProductOne/';
 import ProductTwo from './components/Web/ProductTwo/';
@@ -39,8 +37,6 @@ export default props => (
         <Route exact path="/editprofile" component={EditProfile} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/dashboardwelcome" component={DashboardWelcome} />
-        <Route exact path="/dashboardwelcometwo" component={DashboardWelcomeTwo} />
-        <Route exact path="/dashboardwelcomethree" component={DashboardWelcomeThree} />
         <Route exact path="/product" component={Product} />
         <Route exact path="/productone" component={ProductOne} />
         <Route exact path="/producttwo" component={ProductTwo} />

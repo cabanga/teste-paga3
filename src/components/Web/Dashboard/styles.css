@@ -3,6 +3,22 @@
   flex-direction: row;
 }
 
+.shopping {
+  padding: 1.5em;
+  border-radius: 5px;
+  background-color: #5CA2D5;
+}
+
+.shopping .shopping-icon {
+  font-size: 75px;
+  color: #FFFFFF;
+}
+
+.shopping h1 {
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
 .profile {
   padding: 1em 2em;
   min-height: 100vh;
