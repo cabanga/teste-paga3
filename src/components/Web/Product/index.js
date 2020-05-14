@@ -8,24 +8,16 @@ import './styles.css';
 function Product() {
   return (
     <div className="product">
-      <div className="product-content">
-        <aside className="product-profile">
-          <div className="product-content">
-            <img src={Woman} alt="Mulher" />
-            <span>Gerente</span>
-            <h1>Debora Leandro</h1>
-            <p>Redifinir palavra-passe</p>
-          </div>
-          <div className="product-menu">
-            <span>Menu</span>
-            <ul>
-              <li><Link to="/">Gestão de vendas</Link></li>
-              <li><Link to="/">Gestão de funcionarios</Link></li>
-              <li><Link to="/">Gestão de produto</Link></li>
-            </ul>
-          </div>
-        </aside>
-      </div>
+      <aside className="product-profile">
+        <img src={Woman} alt="Logotipo da empresa" />
+        <span>Empresa</span>
+        <h1>NCR Angola</h1>
+        <span>IBAN</span>
+        <h1>A06 0988747747884</h1>
+        <span>Endereço</span>
+        <h1>Luanda, Viana</h1>
+      </aside>
+
       <main className="main">
         <div className="btn-back">
          <p><Link to="/">Voltar</Link></p> 
@@ -46,8 +38,7 @@ function Product() {
           </form>
         </div>
         <div className="btn-product">
-          < input type = "button"
-          value = "Adicionar novo produto" / >
+          <input type="button" value="Adicionar novo produto" />
         </div>
       </main>
     </div>
