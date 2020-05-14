@@ -19,22 +19,18 @@ function Product() {
       </aside>
 
       <main className="main">
-        <div className="btn-back">
-         <p><Link to="/">Voltar</Link></p> 
-        </div>
         <div className="main-content">
-          <h1>Adicionar produto a loja</h1>
+          <h1>Adicione seus produtos aqui</h1>
           <h3>Gerencie aqui os produtos da loja</h3>
         </div>
         <div className="main-form">
-          <img src={Computer} alt="Computador" />
           <form>
             <label>Nome do produto</label>
-            <input type="text" value="Computador HP i7 8654" />
+            <input type="text" placeholder="Computador HP i7 8654" />
             <label>Código do produto</label>
             <input type="text" placeholder="Código de refêrencia" />
             <label>Preço</label>
-            <input type="text" value="A0A 250.000,00"/>
+            <input type="text" placeholder="A0A 250.000,00"/>
           </form>
         </div>
         <div className="btn-product">

@@ -31,18 +31,9 @@
   margin: 0 0 20px 40px;
 }
 
-.btn-back p a {
-  font-size: 21px;
-  color: #F1F3F6;
-}
-
 .main {
   padding: 2em;
   width: 80%;
-}
-
-.main-content {
-  margin-top: 30px;
 }
 
 .main-content h1 {
@@ -55,45 +46,34 @@
 .main-content h3 {
   color: #FFFFFF;
   font-size: 21px;
+  margin-bottom: 20px;
 }
 
 .main-form {
   padding: .75em;
   background-color: #FFFFFF;
-  display: flex;
-  align-items: center;
   border-radius: 5px;
 }
 
-.main-form form {
-  max-width: 175px;
+form {
+  max-width: 195px;
   margin: 30px;
   border-radius: 5px;
 }
 
-.main-form label {
+form label {
   color: #A0A0A0;
   font-size: 16px;
 }
 
-.main-form form input {
+form input {
   background-color: #F1F3F6;
-  min-width: 245px;
+  min-width: 445px;
   border-radius: 5px;
   border: 0;
   padding: 1em;
   margin-bottom: 10px;
   font-size: 14px;
-}
-
-.main-form form input:hover {
-  border: 1px solid #F94545;
-}
-
-.main-form img {
-  height: 200px;
-  width: 200px;
-  border-radius: 5px;
 }
 
 .btn-product {
@@ -108,4 +88,5 @@
   border-radius: 5px;
   color: #F1F3F6;
   font-size: 14px;
+  cursor: pointer;
 }
