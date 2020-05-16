@@ -66,7 +66,7 @@ form label {
   font-size: 16px;
 }
 
-form input {
+form input, textarea {
   background-color: #F1F3F6;
   min-width: 445px;
   border-radius: 5px;
@@ -81,7 +81,7 @@ form input {
   text-align: center;
 }
 
-.btn-product input {
+.btn-product button {
   padding: 1em;
   background-color: #5CA2D5;
   border: 0;
