@@ -5,6 +5,8 @@ import './styles.css';
 
 function Product() {
   const sellerName = localStorage.getItem('sellerName');
+  const sellerIban = localStorage.getItem('sellerIban');
+  const sellerAddress = localStorage.getItem('sellerAddress');
   return (
     <div className="product">
       <aside className="product-profile">
@@ -12,9 +14,9 @@ function Product() {
         <span>Empresa</span>
         <h1>{sellerName}</h1>
         <span>IBAN</span>
-        <h1>A06 0988747747884</h1>
+        <h1>{sellerIban}</h1>
         <span>Endereço</span>
-        <h1>Luanda, Viana</h1>
+        <h1>{sellerAddress}</h1>
       </aside>
 
       <main className="main">
