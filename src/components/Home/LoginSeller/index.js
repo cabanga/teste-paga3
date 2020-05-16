@@ -22,7 +22,7 @@ export default function LoginSeller() {
       });
 
       localStorage.setItem('sellerLogin', email, password);
-      localStorage.setItem('sellernName', responseSeller.data.name);
+      localStorage.setItem('sellerName', responseSeller.data.name);
 
       history.push('/product');
       alert('Login feito com sucesso');

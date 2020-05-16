@@ -5,12 +5,15 @@ import './styles.css';
 import Ballons from '../../../assets/ballons.svg';
 
 function DashboardWelcome() {
+  const userFirstName = localStorage.getItem('userFirstName');
+  const userLastName = localStorage.getItem('userLastName');
+
   return (
     <div className="dashboardContainer">
       <main className="dashboardFlex">
         <section className="dashboardWelcome">
           <img src={Ballons} alt=""/>
-          <h1>Olá Fernando!</h1>
+          <h1>Olá {userFirstName} {userLastName}!</h1>
           <h2>Seja bem-vindo</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam in, praesentium asperiores neque sequi tempore animi cum incidunt nemo, vitae repudiandae minima eveniet at non cupiditate, inventore corporis delectus!

@@ -19,7 +19,8 @@ export default function Login() {
       const responseUser = await api.post('usersessions', { email, password });
 
       localStorage.setItem('userLogin', email, password);
-      localStorage.setItem('userName', responseUser.data.firstName);
+      localStorage.setItem('userFirstName', responseUser.data.firstName);
+      localStorage.setItem('userLastName', responseUser.data.lastName);
 
       history.push('/dashboardwelcome');
       alert('Login feito com sucesso');

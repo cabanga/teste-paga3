@@ -4,12 +4,13 @@ import Woman from '../../../assets/woman.jpg';
 import './styles.css';
 
 function Product() {
+  const sellerName = localStorage.getItem('sellerName');
   return (
     <div className="product">
       <aside className="product-profile">
         <img src={Woman} alt="Logotipo da empresa" />
         <span>Empresa</span>
-        <h1>NCR Angola</h1>
+        <h1>{sellerName}</h1>
         <span>IBAN</span>
         <h1>A06 0988747747884</h1>
         <span>Endereço</span>

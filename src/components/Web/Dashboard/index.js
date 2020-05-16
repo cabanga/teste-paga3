@@ -8,6 +8,9 @@ import './styles.css';
 import Woman from '../../../assets/woman.jpg';
 
 function Dashboard() {
+  const userFirstName = localStorage.getItem('userFirstName');
+  const userLastName = localStorage.getItem('userLastName');
+
   return (
     <div className="profileContainer">
       <aside className="profile">
@@ -85,7 +88,7 @@ function Dashboard() {
           Editar perfil    
         </Link>
 
-        <h2>Debora Emanuel Leandro</h2>
+        <h2>{userFirstName} {userLastName}</h2>
         <h4>Conta Verificada</h4>
         <section className="dash-info">
           <div className="dash-info-card">
