@@ -13,7 +13,7 @@ function NewProduct() {
         <h1>Paga3</h1>
         
         <h1>Cadastrar novo produto</h1>
-          <p>Descreva o caso detalhadamente para encontrar um herói para resolver isso.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa tempora consequatur nob.</p>
           
           <Link to="/profile" className="back-link">
             <FiArrowLeft size={16} color="#E02041"/>
@@ -25,8 +25,16 @@ function NewProduct() {
             type="text"  
             placeholder="Nome do produto" 
           />
+          <input
+            type="file"
+            className="custom-file-input"
+          />
           <textarea 
             placeholder="Descrição do produto"
+          />
+          <input
+            type="text"  
+            placeholder="Adicione o código do produto"
           />
           <input
             type="text"  
