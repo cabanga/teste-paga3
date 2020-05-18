@@ -13,8 +13,8 @@ import NewProduct from './components/Web/NewProduct/';
 import About from './components/Home/About/';
 import Login from './components/Home/Login/';
 import LoginSeller from './components/Home/LoginSeller/';
-import Register from './components/Home/Register/';
-import RegisterSeller from './components/Home/RegisterSeller/';
+import RegisterUser from './pages/RegisterUser/';
+import RegisterSeller from './pages/RegisterSeller/';
 import Main from './components/Home/Main';
 import ScrollToTop from './components/Home/ScrollTop'
 
@@ -25,10 +25,10 @@ export default props => (
         <Route exact path="/" component={Main} />
         <Route exact path="/contacts" component={Contacts} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/loginseller" component={LoginSeller} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/registerseller" component={RegisterSeller} />
+        <Route exact path="/login/user" component={Login} />
+        <Route exact path="/login/seller" component={LoginSeller} />
+        <Route exact path="/register/user" component={RegisterUser} />
+        <Route exact path="/register/seller" component={RegisterSeller} />
         <Route exact path="/request" component={Request} />
         <Route exact path="/requestempty" component={RequestEmpty} />
         <Route exact path="/editprofile" component={EditProfile} />
