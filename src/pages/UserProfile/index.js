@@ -47,7 +47,7 @@ function Dashboard() {
             <p>Ago 20.02.2020</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
@@ -63,7 +63,7 @@ function Dashboard() {
             <p>Ago 20.02.2020</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
@@ -79,7 +79,7 @@ function Dashboard() {
             <p>Ago 20.02.2020</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
@@ -95,7 +95,7 @@ function Dashboard() {
             <p>Ago 20.02.2020</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
         </ul>
