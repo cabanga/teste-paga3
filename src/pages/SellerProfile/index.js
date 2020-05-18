@@ -28,7 +28,7 @@ function SellerProfile() {
 
           <Link className="add-product" to="/product/new">Adicionar produto</Link>
           <button type="button" className="button">
-          <FaPowerOff size={18} color="#E02041" />
+          <FaPowerOff size={18} color="#F94545" />
         </button>
         </header>
         <h1>Produtos cadastrados</h1>
@@ -46,7 +46,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
@@ -62,7 +62,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
@@ -78,7 +78,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
@@ -94,7 +94,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FaTrash size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
         </ul>

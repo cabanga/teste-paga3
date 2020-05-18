@@ -51,7 +51,7 @@ export default function RegisterSeller() {
           <p>Pagar por prestações agora ficou mais fácil.</p>
           
           <Link to="/login/seller" className="back-link">
-            <FiArrowLeft size={16} color="#E02041"/>
+            <FiArrowLeft size={20} color="#F94545"/>
             Fazer login
           </Link>
         </section>

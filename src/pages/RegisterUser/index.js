@@ -48,7 +48,7 @@ export default function RegisterSeller() {
           <p>Pagar por prestações agora ficou mais fácil.</p>
           
           <Link to="/login/user" className="back-link">
-            <FiArrowLeft size={16} color="#E02041"/>
+            <FiArrowLeft size={20} color="#F94545"/>
             Fazer login
           </Link>
         </section>
@@ -61,7 +61,7 @@ export default function RegisterSeller() {
           />
           <input
             type="text"
-            placeholder="último nome"
+            placeholder="Último nome"
             value={lastName}
             onChange={e => setLastName(e.target.value)}
           />

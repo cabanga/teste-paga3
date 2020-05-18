@@ -55,7 +55,7 @@ export default function Logon() {
           <button className="button" type="submit">Entrar</button>
 
           <Link to="/register/seller" className="back-link">
-            <FiLogIn size={16} color="#E02041"/>
+            <FiLogIn size={20} color="#F94545"/>
             Fazer cadastro
           </Link>
         </form>

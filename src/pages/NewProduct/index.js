@@ -16,7 +16,7 @@ function NewProduct() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa tempora consequatur nob.</p>
           
           <Link to="/seller/dashboard" className="back-link">
-            <FiArrowLeft size={16} color="#E02041"/>
+            <FiArrowLeft size={20} color="#F94545"/>
            Voltar no Perfil
           </Link>
         </section>
