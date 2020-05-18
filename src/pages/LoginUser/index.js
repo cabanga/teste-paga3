@@ -26,7 +26,7 @@ export default function Logon() {
       localStorage.setItem('userFirstName', responseUser.data.firstName);
       localStorage.setItem('userLastName', responseUser.data.lastName);
 
-      history.push('/dashboardwelcome');
+      history.push('/user/dashboard');
       alert('Login feito com sucesso');
     } catch (err) {
       alert('Erro ao fazer login, tente novamente')

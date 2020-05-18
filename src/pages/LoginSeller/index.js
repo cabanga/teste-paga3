@@ -27,7 +27,7 @@ export default function Logon() {
       localStorage.setItem('sellerIban', responseSeller.data.iban);
       localStorage.setItem('sellerAddress', responseSeller.data.address);
 
-      history.push('/profile');
+      history.push('/seller/dashboard');
       alert('Login feito com sucesso');
     } catch (err) {
       alert('Erro ao fazer login, tente novamente')
