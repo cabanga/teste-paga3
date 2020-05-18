@@ -15,7 +15,7 @@ body {
 input,
 button,
 textarea {
-  font: 400 18px Roboto, sans-serif;
+  font: 400 18px Nunito, sans-serif;
 }
 
 button {
@@ -80,4 +80,12 @@ form textarea {
 
 .back-link:hover {
   opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

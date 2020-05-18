@@ -47,7 +47,7 @@
 
 .main-profile {
   width: 100%;
-  max-width:980px;
+  max-width: 980px;
   padding: 0 30px;
   margin: 32px auto;
 }
@@ -106,7 +106,7 @@
   color: #141414;
 }
 
-.main-profile ul li p + strong {
+.main-profile ul li p+strong {
   margin-top: 10px;
 }
 

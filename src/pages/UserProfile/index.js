@@ -5,8 +5,8 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import './styles.css';
-import Woman from '../../../assets/woman.jpg';
+import './style.css';
+import Woman from '../../assets/woman.jpg';
 
 function Dashboard() {
   const userFirstName = localStorage.getItem('userFirstName');

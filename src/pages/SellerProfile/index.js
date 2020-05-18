@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 
-import Woman from '../../../assets/woman.jpg';
-import './styles.css';
+import Woman from '../../assets/woman.jpg';
+import './style.css';
 
-function Product() {
+function SellerProfile() {
   const sellerName = localStorage.getItem('sellerName');
   const sellerIban = localStorage.getItem('sellerIban');
   const sellerAddress = localStorage.getItem('sellerAddress');
@@ -104,4 +104,4 @@ function Product() {
   )
 }
 
-export default Product;
+export default SellerProfile;

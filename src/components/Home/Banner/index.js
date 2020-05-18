@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Button from '../Button/';
 
 import Analytics from '../../../assets/analitics.svg';
@@ -6,7 +6,7 @@ import './styles.css';
 
 function Banner() {
   return (
-    <Fragment>
+    <>
       <section className="banner">
         <div className="banner-content">
           <h1>
@@ -21,7 +21,7 @@ function Banner() {
         </div>
       </section>
       <Button />
-    </Fragment>
+    </>
   )
 }
 
