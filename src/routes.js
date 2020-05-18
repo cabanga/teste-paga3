@@ -7,7 +7,7 @@ import RequestEmpty from './components/Web/RequestEmpty/';
 import EditProfile from './components/Web/Edit-profile/';
 import UserProfile from './pages/UserProfile/';
 import SellerProfile from './pages/SellerProfile/';
-import NewProduct from './components/Web/NewProduct/';
+import NewProduct from './pages/NewProduct/';
 import About from './components/Home/About/';
 
 import LoginUser from './pages/LoginUser/';
