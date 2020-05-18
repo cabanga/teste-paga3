@@ -12,7 +12,7 @@ import NewProduct from './components/Web/NewProduct/';
 import About from './components/Home/About/';
 
 import LoginUser from './pages/LoginUser/';
-import LoginSeller from './pages/RegisterSeller/';
+import LoginSeller from './pages/LoginSeller/';
 
 import RegisterUser from './pages/RegisterUser/';
 import RegisterSeller from './pages/RegisterSeller/';
