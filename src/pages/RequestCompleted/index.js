@@ -1,19 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiArrowLeft} from 'react-icons/fi';
 
-import Computer from '../../../assets/pc.jpeg';
-import './styles.css';
+import Computer from '../../assets/pc.jpeg';
+import './style.css';
 
 function RequestCompleted() {
   return (
     <div className="productContainer">
     <div className="productContent">
       <section className="productCards">
-        <h1><Link to="/">Home</Link></h1>
+        <Link to="/user/dashboard" className="back-link">
+            <FiArrowLeft size={16} color="#E02041"/>
+           Voltar no Perfil
+          </Link>
         
         <div className="productCard">
           <h1>Encontre o seu produto pelo código</h1>
-          <input type="text" placeholder="Código"/>  
+          <input type="search" placeholder="Código"/>  
             
           <div className="cardContent">
             <img src={Computer} alt="Computador" />
@@ -29,7 +33,7 @@ function RequestCompleted() {
             </ul>  
           </div>
             
-          <button>Adicionar</button>
+          <button className="button">Adicionar</button>
         </div>
       </section>
         
@@ -69,9 +73,7 @@ function RequestCompleted() {
               <p>NCR Angola</p> 
             </ul>   
           </div>
-          <div className="btn">
             <button className="button">Solicitar</button>
-          </div>
       </section>  
     </div>
     </div>

@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   FaShoppingBasket,
-  FaPowerOff
+  FaPowerOff,
+  FaTrash
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -32,40 +33,72 @@ function Dashboard() {
             </ul>
         </section>
     
-        <section>
-          <div className="profileCard">
-            <span>Nome do produto</span>
-            <p>Computador HP i7 8654</p>
-            <span>Loja</span>
-            <p>NCR Angola</p>
-            <span>Data de aquisição</span>
-            <p>12 Ago 2020</p>
-          </div>
-          <div className="profileCard">
-            <span>Nome do produto</span>
-            <p>Computador HP i7 8654</p>
-            <span>Loja</span>
-            <p>NCR Angola</p>
-            <span>Data de aquisição</span>
-            <p>12 Ago 2020</p>
-          </div>
-          <div className="profileCard">
-            <span>Nome do produto</span>
-            <p>Computador HP i7 8654</p>
-            <span>Loja</span>
-            <p>NCR Angola</p>
-            <span>Data de aquisição</span>
-            <p>12 Ago 2020</p>
-          </div>
-          <div className="profileCard">
-            <span>Nome do produto</span>
-            <p>Computador HP i7 8654</p>
-            <span>Loja</span>
-            <p>NCR Angola</p>
-            <span>Data de aquisição</span>
-            <p>12 Ago 2020</p>
-          </div>
-        </section>
+        <ul>
+          <li>
+            <strong>Nome do Produto</strong>
+            <p>Teste</p>
+            <strong>Imagem</strong>
+            <p>Teste</p>
+            <strong>Descrição</strong>
+            <p>Teste</p>
+            <strong>Loja</strong>
+            <p>Teste</p>
+            <strong>Data</strong>
+            <p>Ago 20.02.2020</p>
+
+            <button type="button">
+              <FaTrash size={20} color="#a8a8b3"/>
+            </button>
+          </li>
+          <li>
+            <strong>Nome do Produto</strong>
+            <p>Teste</p>
+            <strong>Imagem</strong>
+            <p>Teste</p>
+            <strong>Descrição</strong>
+            <p>Teste</p>
+            <strong>Loja</strong>
+            <p>Teste</p>
+            <strong>Data</strong>
+            <p>Ago 20.02.2020</p>
+
+            <button type="button">
+              <FaTrash size={20} color="#a8a8b3"/>
+            </button>
+          </li>
+          <li>
+            <strong>Nome do Produto</strong>
+            <p>Teste</p>
+            <strong>Imagem</strong>
+            <p>Teste</p>
+            <strong>Descrição</strong>
+            <p>Teste</p>
+            <strong>Loja</strong>
+            <p>Teste</p>
+            <strong>Data</strong>
+            <p>Ago 20.02.2020</p>
+
+            <button type="button">
+              <FaTrash size={20} color="#a8a8b3"/>
+            </button>
+          </li>
+          <li>
+            <strong>Nome do Produto</strong>
+            <p>Teste</p>
+            <strong>Imagem</strong>
+            <p>Teste</p>
+            <strong>Descrição</strong>
+            <p>Teste</p>
+            <strong>Loja</strong>
+            <p>Teste</p>
+            <strong>Data</strong>
+            <p>Ago 20.02.2020</p>
+
+            <button type="button">
+              <FaTrash size={20} color="#a8a8b3"/>
+            </button>
+          </li>
+        </ul>
       </main>  
       
       <aside className="profile profileAside">
@@ -97,7 +130,7 @@ function Dashboard() {
           </section>
 
         <button type="button" className="button">
-          <FaPowerOff size={18} color="#E02041" />
+          <FaPowerOff size={18} />
         </button> 
       </aside>
     

@@ -1,20 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import { FiArrowLeft} from 'react-icons/fi';
 
-import Computer from '../../../assets/pc.jpeg';
-import Fall from '../../../assets/fall.svg';
-import './styles.css';
+import Computer from '../../assets/pc.jpeg';
+import Fall from '../../assets/fall.svg';
+import './style.css';
 
 function RequestEmpty() {
   return (
     <div className="productContainer">
     <div className="productContent">
       <section className="productCards">
-        <h1><Link to="/">Home</Link></h1>
+        <Link to="/user/dashboard" className="back-link">
+            <FiArrowLeft size={16} color="#E02041"/>
+           Voltar no Perfil
+          </Link>
         
         <div className="productCard">
           <h1>Encontre o seu produto pelo código</h1>
-          <input type="text" placeholder="Código"/>  
+          <input type="search" placeholder="Código"/>  
             
           <div className="cardContent">
             <img src={Computer} alt="Computador" />
@@ -29,7 +33,7 @@ function RequestEmpty() {
               <p>3</p>  
             </ul> 
           </div>         
-          <button>Adicionar</button>
+          <button className="button">Adicionar</button>
         </div>
       </section>
         

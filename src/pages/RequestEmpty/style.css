@@ -33,22 +33,6 @@
   margin-bottom: 20px;
 }
 
-.productCard input {
-  outline: 0;
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-  text-align: center;
-}
-
-.productCard input:focus {
-  border: 1px solid #0D558A;
-}
-
 .cardContent {
   display: flex;
   padding: 14px;
@@ -108,4 +92,8 @@
 .productInfo p {
   font-size: 14px;
   color: #141414;
+}
+
+.button {
+  margin-bottom: 20px;
 }
