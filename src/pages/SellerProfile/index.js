@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiPower, FiTrash2 } from 'react-icons/fi';
+import { FaPowerOff, FaTrash } from 'react-icons/fa';
 
 import Woman from '../../assets/woman.jpg';
 import './style.css';
@@ -20,10 +20,6 @@ function SellerProfile() {
         <h1>{sellerIban}</h1>
         <span>Endereço</span>
         <h1>{sellerAddress}</h1>
-
-        <button type="button" className="button">
-          <FiPower size={18} color="#E02041" />
-        </button>
       </aside>
 
       <main className="main-profile">
@@ -31,6 +27,9 @@ function SellerProfile() {
           <span>{sellerName}</span>
 
           <Link className="add-product" to="/product/new">Adicionar produto</Link>
+          <button type="button" className="button">
+          <FaPowerOff size={18} color="#E02041" />
+        </button>
         </header>
         <h1>Produtos cadastrados</h1>
         <ul>
@@ -47,7 +46,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FiTrash2 size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#a8a8b3"/>
             </button>
           </li>
           <li>
@@ -63,7 +62,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FiTrash2 size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#a8a8b3"/>
             </button>
           </li>
           <li>
@@ -79,7 +78,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FiTrash2 size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#a8a8b3"/>
             </button>
           </li>
           <li>
@@ -95,7 +94,7 @@ function SellerProfile() {
             <p>AOA 20000,00</p>
 
             <button type="button">
-              <FiTrash2 size={20} color="#a8a8b3"/>
+              <FaTrash size={20} color="#a8a8b3"/>
             </button>
           </li>
         </ul>
