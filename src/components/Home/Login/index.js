@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import api from '../../../services/api';
@@ -30,7 +30,7 @@ export default function Login() {
   }
 
   return (
-    <Fragment>
+    <>
       <h1 className="back-button">
         <Link to="/">Home</Link>
       </h1>
@@ -78,6 +78,6 @@ export default function Login() {
           </section>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }
