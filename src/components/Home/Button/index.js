@@ -6,7 +6,7 @@ import './styles.css';
 function Button() {
   return (
       <div className="link">
-        <Link to="/register">Crie a sua Conta</Link>
+        <Link to="/register/user">Crie a sua Conta</Link>
       </div>
   )
 }
