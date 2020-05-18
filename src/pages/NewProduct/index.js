@@ -15,7 +15,7 @@ function NewProduct() {
         <h1>Cadastrar novo produto</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa tempora consequatur nob.</p>
           
-          <Link to="/profile" className="back-link">
+          <Link to="/seller/dashboard" className="back-link">
             <FiArrowLeft size={16} color="#E02041"/>
            Voltar no Perfil
           </Link>
