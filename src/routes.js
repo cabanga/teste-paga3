@@ -7,12 +7,9 @@ import RequestEmpty from './components/Web/RequestEmpty/';
 import EditProfile from './components/Web/Edit-profile/';
 import Dashboard from './components/Web/Dashboard/';
 import DashboardWelcome from './components/Web/DashboardWelcome/';
-import Product from './components/Web/Product/';
-import ProductOne from './components/Web/ProductOne/';
-import ProductTwo from './components/Web/ProductTwo/';
-import ProductThree from './components/Web/ProductThree/';
-import ProductFour from './components/Web/ProductFour/';
-import ProductFive from './components/Web/ProductFive/';
+import ProfileSeller from './components/Web/ProfileSeller/';
+import NewProduct from './components/Web/NewProduct/';
+
 import About from './components/Home/About/';
 import Login from './components/Home/Login/';
 import LoginSeller from './components/Home/LoginSeller/';
@@ -37,12 +34,8 @@ export default props => (
         <Route exact path="/editprofile" component={EditProfile} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/dashboardwelcome" component={DashboardWelcome} />
-        <Route exact path="/product" component={Product} />
-        <Route exact path="/productone" component={ProductOne} />
-        <Route exact path="/producttwo" component={ProductTwo} />
-        <Route exact path="/productthree" component={ProductThree} />
-        <Route exact path="/productfour" component={ProductFour} />
-        <Route exact path="/productfive" component={ProductFive} />
+        <Route exact path="/profile" component={ProfileSeller} />
+        <Route exact path="/product/new" component={NewProduct} />
       </Switch>
     </ScrollToTop>
   </BrowserRouter>
