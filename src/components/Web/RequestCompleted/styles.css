@@ -119,17 +119,6 @@ button {
   margin-bottom: 30px;
 }
 
-.button {
-  padding: 1em 7em;
-  background-color: #91CCF4;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  color: #FFFFFF;
-  margin-top: 20px;
-  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-}
-
 .inffoCard {
   display: flex;
   margin-top: 20px;

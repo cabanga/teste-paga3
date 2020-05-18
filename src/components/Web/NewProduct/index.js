@@ -40,6 +40,7 @@ function NewProduct() {
             type="text"  
             placeholder="Valor em kwanza"
           />
+          <button className="button" type="submit">Cadastrar</button>
         </form>
       </div>
     </div>
