@@ -1,11 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import './style.css';
 
+import api from '../../services/api';
+
 function NewProduct() {
-  
+  const [productName, setProductName] = useState('');
+  const [productDescription, setProductDescription] = useState('');
+  const [productCode, setProductCode] = useState('');
+  const [productPrice, setProductPrice] = useState('');
+
+  const history = useHistory();
+
+  const sellerLogin = localStorage.getItem('sellerLogin');
+
+  async function handleNewProduct(e) {
+    e.preventDefault();
+
+    const data = {
+      productName,
+      productDescription,
+      productCode,
+      productPrice
+    };
+
+    try {
+      await api.post('products', data, {
+        headers: {
+          Authorization: sellerLogin,
+        }
+      })
+      history.push('/seller/dashboard');
+    } catch (error) {
+      alert('Deu merda, tente de novo');
+    }
+  }
+
   return (
     <div className="new-product">
       <div className="content">
@@ -20,20 +52,28 @@ function NewProduct() {
            Voltar no Perfil
           </Link>
         </section>
-        <form>
+        <form onSubmit={handleNewProduct}>
           <input
-            type="text"  
+            type="text"
+            value={productName}
+            onChange={e => setProductName(e.target.value)}  
             placeholder="Nome do produto" 
           />
-          <textarea 
+          <textarea
+            value={productDescription}
+            onChange={e => setProductDescription(e.target.value)}
             placeholder="Descrição do produto"
           />
           <input
-            type="text"  
+            type="text"
+            value={productCode}
+            onChange={e => setProductCode(e.target.value)}  
             placeholder="Adicione o código do produto"
           />
           <input
-            type="text"  
+            type="text"
+            value={productPrice}
+            onChange={e => setProductPrice(e.target.value)}  
             placeholder="Valor em kwanza"
           />
           <button className="button" type="submit">Cadastrar</button>
