@@ -1,14 +1,50 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { FaPowerOff, FaTrash } from 'react-icons/fa';
 
 import Woman from '../../assets/woman.jpg';
 import './style.css';
 
+import api from '../../services/api';
+
 function SellerProfile() {
+  const [products, setProducts] = useState([]);
+  const history = useHistory();
+
+  const sellerLogin = localStorage.getItem('sellerLogin');
   const sellerName = localStorage.getItem('sellerName');
   const sellerIban = localStorage.getItem('sellerIban');
   const sellerAddress = localStorage.getItem('sellerAddress');
+
+  useEffect(() => {
+    api.get('profile', {
+      headers: {
+        Authorization: sellerLogin,
+      }
+    }).then(response => {
+      setProducts(response.data);
+    })
+  }, [sellerLogin]);
+
+  async function handleDeleteProduct(id) {
+    try {
+      await api.delete(`products/${id}`, {
+        headers: {
+          Authorization: sellerLogin,
+        }
+      });
+
+      setProducts(products.filter(product => product.id !== id));
+    } catch (err) {
+      alert('Deu merda');
+    }
+  }
+
+  function handleLogout() {
+    localStorage.clear();
+
+    history.push('/');
+  }
 
   return (
     <div className="product">
@@ -27,76 +63,37 @@ function SellerProfile() {
           <span>{sellerName}</span>
 
           <Link className="add-product" to="/product/new">Adicionar produto</Link>
-          <button type="button" className="button">
+          <button onClick={handleLogout} type="button" className="button">
           <FaPowerOff size={18} color="#F94545" />
         </button>
         </header>
         <h1>Produtos cadastrados</h1>
         <ul>
-          <li>
+          {products.map(({
+            id,
+            productName,
+            productDescription,
+            productImage,
+            productCode,
+            productPrice
+          }) => (
+            <li key={id}>
             <strong>Produto</strong>
-            <p>Teste</p>
+            <p>{productName}</p>
             <strong>Imagem</strong>
-            <p>Teste</p>
+            <p>{productImage}</p>
             <strong>Descrição</strong>
-            <p>Teste</p>
+            <p>{productDescription}</p>
             <strong>Código do Produto</strong>
-            <p>Teste</p>
+            <p>{productCode}</p>
             <strong>Preço</strong>
-            <p>AOA 20000,00</p>
+            <p>{Intl.NumberFormat('pt-AO', { style: 'currency', currency: 'AOA' }).format(productPrice)}</p>
 
-            <button type="button">
+            <button onClick={() => handleDeleteProduct(id)} type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
-          <li>
-            <strong>Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
-            <strong>Código do Produto</strong>
-            <p>Teste</p>
-            <strong>Preço</strong>
-            <p>AOA 20000,00</p>
-
-            <button type="button">
-              <FaTrash size={20} color="#F94545"/>
-            </button>
-          </li>
-          <li>
-            <strong>Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
-            <strong>Código do Produto</strong>
-            <p>Teste</p>
-            <strong>Preço</strong>
-            <p>AOA 20000,00</p>
-
-            <button type="button">
-              <FaTrash size={20} color="#F94545"/>
-            </button>
-          </li>
-          <li>
-            <strong>Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
-            <strong>Código do Produto</strong>
-            <p>Teste</p>
-            <strong>Preço</strong>
-            <p>AOA 20000,00</p>
-
-            <button type="button">
-              <FaTrash size={20} color="#F94545"/>
-            </button>
-          </li>
+          ))}
         </ul>
       </main>
     </div>
