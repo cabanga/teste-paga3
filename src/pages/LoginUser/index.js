@@ -57,6 +57,11 @@ export default function Logon() {
             <FiLogIn size={20} color="#F94545"/>
             Fazer cadastro
           </Link>
+
+          <Link to="/login/seller" className="back-link">
+            <FiLogIn size={20} color="#F94545"/>
+            Entrar como organização
+          </Link>
         </form>
       </section>
     </div>

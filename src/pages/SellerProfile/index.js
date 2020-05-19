@@ -73,15 +73,12 @@ function SellerProfile() {
             id,
             productName,
             productDescription,
-            productImage,
             productCode,
             productPrice
           }) => (
             <li key={id}>
             <strong>Produto</strong>
             <p>{productName}</p>
-            <strong>Imagem</strong>
-            <p>{productImage}</p>
             <strong>Descrição</strong>
             <p>{productDescription}</p>
             <strong>Código do Produto</strong>

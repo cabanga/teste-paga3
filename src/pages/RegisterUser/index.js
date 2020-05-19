@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FiArrowLeft } from 'react-icons/fi';
+import { FiArrowLeft, FiUserPlus } from 'react-icons/fi';
 
 import api from '../../services/api';
 import './style.css';
@@ -50,6 +50,11 @@ export default function RegisterSeller() {
           <Link to="/login/user" className="back-link">
             <FiArrowLeft size={20} color="#F94545"/>
             Fazer login
+          </Link>
+
+          <Link to="/register/seller" className="back-link">
+            <FiUserPlus size={20} color="#F94545"/>
+            Cadastre sua loja
           </Link>
         </section>
         <form onSubmit={handleRegister}>
