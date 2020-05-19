@@ -25,10 +25,6 @@ function NewProduct() {
             type="text"  
             placeholder="Nome do produto" 
           />
-          <input
-            type="file"
-            className="custom-file-input"
-          />
           <textarea 
             placeholder="Descrição do produto"
           />
