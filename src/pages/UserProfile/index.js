@@ -4,7 +4,7 @@ import {
   FaPowerOff,
   FaTrash
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import './style.css';
 import Woman from '../../assets/woman.jpg';
@@ -12,6 +12,14 @@ import Woman from '../../assets/woman.jpg';
 function Dashboard() {
   const userFirstName = localStorage.getItem('userFirstName');
   const userLastName = localStorage.getItem('userLastName');
+
+  const history = useHistory();
+  
+  function handleLogout() {
+    localStorage.clear();
+
+    history.push('/');
+  }
 
   return (
     <div className="profileContainer">
@@ -129,7 +137,7 @@ function Dashboard() {
             <p>AO6 0000000000000022</p>  
           </section>
 
-        <button type="button" className="button">
+        <button onClick={handleLogout} type="button" className="button">
           <FaPowerOff size={18} />
         </button> 
       </aside>
