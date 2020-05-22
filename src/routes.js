@@ -1,52 +1,41 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
-import Contacts from './components/Home/Contact/Contacts';
-import Request from './components/Web/RequestCompleted/';
-import RequestEmpty from './components/Web/RequestEmpty/';
-import EditProfile from './components/Web/Edit-profile/';
-import Dashboard from './components/Web/Dashboard/';
-import DashboardWelcome from './components/Web/DashboardWelcome/';
-import DashboardWelcomeTwo from './components/Web/DashboardWelcome-two/';
-import DashboardWelcomeThree from './components/Web/DashboardWelcome-three/';
-import Product from './components/Web/Product/';
-import ProductOne from './components/Web/ProductOne/';
-import ProductTwo from './components/Web/ProductTwo/';
-import ProductThree from './components/Web/ProductThree/';
-import ProductFour from './components/Web/ProductFour/';
-import ProductFive from './components/Web/ProductFive/';
-import About from './components/Home/About/';
-import Login from './components/Home/Login/';
-import LoginSeller from './components/Home/LoginSeller/';
-import Register from './components/Home/Register/';
-import RegisterSeller from './components/Home/RegisterSeller/';
+import RequestCompleted from './pages/RequestCompleted/';
+import RequestEmpty from './pages/RequestEmpty/';
+
+import UserEditProfile from './pages/UserEditProfile/';
+import UserProfile from './pages/UserProfile/';
+import SellerProfile from './pages/SellerProfile/';
+import NewProduct from './pages/NewProduct/';
+
+import LoginUser from './pages/LoginUser/';
+import LoginSeller from './pages/LoginSeller/';
+
+import RegisterUser from './pages/RegisterUser/';
+import RegisterSeller from './pages/RegisterSeller/';
+
 import Main from './components/Home/Main';
-import ScrollToTop from './components/Home/ScrollTop'
+import ScrollToTop from './components/Home/ScrollTop';
 
 export default props => (
   <BrowserRouter>
     <ScrollToTop>
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route exact path="/contacts" component={Contacts} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/loginseller" component={LoginSeller} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/registerseller" component={RegisterSeller} />
-        <Route exact path="/request" component={Request} />
-        <Route exact path="/requestempty" component={RequestEmpty} />
-        <Route exact path="/editprofile" component={EditProfile} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/dashboardwelcome" component={DashboardWelcome} />
-        <Route exact path="/dashboardwelcometwo" component={DashboardWelcomeTwo} />
-        <Route exact path="/dashboardwelcomethree" component={DashboardWelcomeThree} />
-        <Route exact path="/product" component={Product} />
-        <Route exact path="/productone" component={ProductOne} />
-        <Route exact path="/producttwo" component={ProductTwo} />
-        <Route exact path="/productthree" component={ProductThree} />
-        <Route exact path="/productfour" component={ProductFour} />
-        <Route exact path="/productfive" component={ProductFive} />
+        
+        <Route exact path="/login/user" component={LoginUser} />
+        <Route exact path="/login/seller" component={LoginSeller} />
+        
+        <Route exact path="/register/user" component={RegisterUser} />
+        <Route exact path="/register/seller" component={RegisterSeller} />
+        
+        <Route exact path="/request/completed" component={RequestCompleted} />
+        <Route exact path="/request/empty" component={RequestEmpty} />
+        <Route exact path="/user/edit/profile" component={UserEditProfile} />
+        <Route exact path="/user/dashboard" component={UserProfile} />
+        <Route exact path="/seller/dashboard" component={SellerProfile} />
+        <Route exact path="/product/new" component={NewProduct} />
       </Switch>
     </ScrollToTop>
   </BrowserRouter>

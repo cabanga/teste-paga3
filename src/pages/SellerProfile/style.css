@@ -1,0 +1,139 @@
+.product {
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-profile {
+  min-height: 100vh;
+  padding: 3em 6em 0 2em;
+  background-color: #222;
+}
+
+.product-profile span {
+  color: #F1F3F6;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.product-profile h1 {
+  font-size: 13px;
+  margin: 4px 0 10px 0;
+  padding: .85em;
+  color: #5CA2D5;
+  background-color: #000000;
+}
+
+.product-profile img {
+  width: 195px;
+  height: 195px;
+  border-radius: 5px;
+  margin: 0 0 20px 40px;
+}
+
+.main-profile {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 30px;
+  margin: 32px auto;
+}
+
+.main-profile header {
+  display: flex;
+  align-items: center;
+}
+
+.main-profile header span {
+  font-size: 37px;
+  margin-left: 24px;
+  color: #F1F3F6;
+}
+
+.main-profile header a {
+  width: 260px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.main-profile header button {
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid #dcdce6;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+}
+
+.main-profile header button:hover {
+  border-color: #999;
+}
+
+.main-profile h1 {
+  margin-top: 80px;
+  margin-bottom: 24px;
+  color: #F1F3F6;
+}
+
+.main-profile ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  list-style: none;
+}
+
+.main-profile ul li {
+  background: #F1F3F6;
+  padding: 24px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.main-profile ul li button {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  background: transparent;
+  border: 0;
+}
+
+.main-profile ul li button:hover {
+  opacity: 0.8;
+}
+
+.main-profile ul li strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #141414;
+}
+
+.main-profile ul li p+strong {
+  margin-top: 10px;
+}
+
+.main-profile ul li p {
+  color: #737380;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.add-product {
+  width: 100%;
+  height: 60px;
+  background: #5CA2D5;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition: filter 0.2s;
+}
+
+.add-product:hover {
+  filter: brightness(90%);
+}

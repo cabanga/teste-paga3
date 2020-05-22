@@ -4,16 +4,14 @@ const Menu = [
     pathname: "/"
   },
   {
-    label: "Contatos",
-    pathname: "/contacts"
+    label: "Contatos"
   },
   {
-    label: "Sobre nós",
-    pathname: "/about"
+    label: "Sobre nós"
   },
   {
     label: "Entrar",
-    pathname: "/login"
+    pathname: "/login/user"
   }
 ];
 
