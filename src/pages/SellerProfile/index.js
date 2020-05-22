@@ -74,7 +74,8 @@ function SellerProfile() {
             productName,
             productDescription,
             productCode,
-            productPrice
+            productPrice,
+            productInstallment
           }) => (
             <li key={id}>
             <strong>Produto</strong>
@@ -83,6 +84,8 @@ function SellerProfile() {
             <p>{productDescription}</p>
             <strong>Código do Produto</strong>
             <p>{productCode}</p>
+            <strong>Número de prestações</strong>    
+            <p>{productInstallment}</p>
             <strong>Preço</strong>
             <p>{Intl.NumberFormat('pt-AO', { style: 'currency', currency: 'AOA' }).format(productPrice)}</p>
 
