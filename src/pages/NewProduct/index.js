@@ -11,6 +11,7 @@ function NewProduct() {
   const [productDescription, setProductDescription] = useState('');
   const [productCode, setProductCode] = useState('');
   const [productPrice, setProductPrice] = useState('');
+  const [productInstallment, setProductInstallment] = useState('');
 
   const history = useHistory();
 
@@ -23,7 +24,8 @@ function NewProduct() {
       productName,
       productDescription,
       productCode,
-      productPrice
+      productPrice,
+      productInstallment
     };
 
     try {
@@ -75,6 +77,12 @@ function NewProduct() {
             value={productPrice}
             onChange={e => setProductPrice(e.target.value)}  
             placeholder="Valor em kwanza"
+          />
+          <input
+            type="text"
+            value={productInstallment}
+            onChange={e => setProductInstallment(e.target.value)}  
+            placeholder="Número de prestações"
           />
           <button className="button" type="submit">Cadastrar</button>
         </form>
