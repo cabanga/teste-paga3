@@ -45,10 +45,6 @@
   text-align: center;
 }
 
-.productCard input:focus {
-  border: 1px solid #0D558A;
-}
-
 .cardContent {
   display: flex;
   padding: 14px;
