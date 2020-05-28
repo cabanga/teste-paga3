@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import RequestCompleted from './pages/RequestCompleted/';
-import RequestEmpty from './pages/RequestEmpty/';
+import BuyProduct from './pages/BuyProduct/';
 
 import UserEditProfile from './pages/UserEditProfile/';
 import UserProfile from './pages/UserProfile/';
@@ -31,7 +31,7 @@ export default props => (
         <Route exact path="/register/seller" component={RegisterSeller} />
         
         <Route exact path="/request/completed" component={RequestCompleted} />
-        <Route exact path="/request/empty" component={RequestEmpty} />
+        <Route exact path="/comprar" component={BuyProduct} />
         <Route exact path="/user/edit/profile" component={UserEditProfile} />
         <Route exact path="/user/dashboard" component={UserProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
