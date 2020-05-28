@@ -11,6 +11,7 @@ export default function RegisterSeller() {
   const [password, setPassword] = useState('');
   const [iban, setIban] = useState('');
   const [address, setAddress] = useState('');
+  const [telephone, setTelephone] = useState('');
 
   const history = useHistory();
 
@@ -22,13 +23,15 @@ export default function RegisterSeller() {
     setPassword('');
     setIban('');
     setAddress('');
+    setTelephone('');
 
     const data = {
       name,
       email,
       password,
       iban,
-      address
+      address,
+      telephone
     };
 
     try {
@@ -73,6 +76,12 @@ export default function RegisterSeller() {
             placeholder="Password"
             value={password}
             onChange={e => setPassword(e.target.value)}
+          />
+          <input
+            type="tel"
+            value={telephone}
+            onChange={e => setTelephone(e.target.value)}
+            placeholder="Contato da organização"
           />
           <input
             type="text"
