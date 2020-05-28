@@ -9,7 +9,7 @@ function RequestEmpty() {
   return (
     <div className="productContainer">
     <div className="productContent">
-      <section className="productCards">
+      <section>
         <Link to="/user/dashboard" className="back-link">
             <FiArrowLeft size={16} color="#E02041"/>
            Voltar no Perfil
@@ -35,18 +35,6 @@ function RequestEmpty() {
           <button className="button">Adicionar</button>
         </div>
       </section>
-        
-      <section className="productInfo">
-        <h1>Lista de Produtos</h1>
-        <img src={Fall} alt="Women" />
-        <h2>Aqui estará sua lista de produtos</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laborum.
-        </p>   
-      </section>  
     </div>
     </div>
   )
