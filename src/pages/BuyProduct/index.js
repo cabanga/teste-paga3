@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi';
 
+import ProductSearch from '../ProductSearch/';
 import './style.css';
 
 function RequestEmpty() {
@@ -16,8 +17,7 @@ function RequestEmpty() {
         
         <div className="productCard">
           <h1>Encontre o seu produto pelo código</h1>
-          <input type="search" placeholder="Código do produto" />
-          <button className="searchButton">Buscar</button>  
+          <ProductSearch />
             
           <div className="cardContent">
             <ul>

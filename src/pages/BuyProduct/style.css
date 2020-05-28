@@ -27,15 +27,6 @@
   margin-bottom: 20px;
 }
 
-.productCard .searchButton {
-  padding: .60em;
-  border: 0;
-  border-radius: 5px;
-  color: #FFFFFF;
-  background: #91CCF4;
-  cursor: pointer;
-}
-
 .cardContent {
   display: flex;
   padding: 10px;
