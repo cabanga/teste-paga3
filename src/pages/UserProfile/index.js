@@ -24,7 +24,7 @@ function Dashboard() {
   return (
     <div className="profileContainer">
       <aside className="profile">
-        <Link to="/requestempty" className="shopping">
+        <Link to="/request/empty" className="shopping">
           <FaShoppingBasket className="shopping-icon" />
           <h1>Fazer compra</h1>
         </Link>
@@ -34,11 +34,6 @@ function Dashboard() {
         <section className="mainInfo">
           <h1>Dashboard de Gestão</h1>
           <h3>Gerencie melhor as suas contas</h3>
-            <ul>
-              <li><Link to="/">Todos</Link></li>
-              <li><Link to="/">Em pagamento</Link></li>
-              <li><Link to="/">Pagas</Link></li>
-            </ul>
         </section>
     
         <ul>

@@ -10,6 +10,7 @@ export default function RegisterSeller() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [telephone, setTelephone] = useState('');
 
   const history = useHistory();
 
@@ -20,12 +21,14 @@ export default function RegisterSeller() {
     setLastName('');
     setEmail('');
     setPassword('');
+    setTelephone('');
 
     const data = {
       firstName,
       lastName,
       email,
-      password
+      password,
+      telephone
     };
 
     try {
@@ -81,6 +84,12 @@ export default function RegisterSeller() {
             placeholder="Password"
             value={password}
             onChange={e => setPassword(e.target.value)}
+          />
+          <input
+            type="tel"
+            value={telephone}
+            onChange={e => setTelephone(e.target.value)}
+            placeholder="Seu contato"
           />
           <button className="button" type="submit">Cadastrar</button>
         </form>
