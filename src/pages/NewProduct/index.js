@@ -8,7 +8,6 @@ import api from '../../services/api';
 
 function NewProduct() {
   const [productName, setProductName] = useState('');
-  const [productDescription, setProductDescription] = useState('');
   const [productCode, setProductCode] = useState('');
   const [productPrice, setProductPrice] = useState('');
   const [productInstallment, setProductInstallment] = useState('');
@@ -22,7 +21,6 @@ function NewProduct() {
 
     const data = {
       productName,
-      productDescription,
       productCode,
       productPrice,
       productInstallment
@@ -60,11 +58,6 @@ function NewProduct() {
             value={productName}
             onChange={e => setProductName(e.target.value)}  
             placeholder="Nome do produto" 
-          />
-          <textarea
-            value={productDescription}
-            onChange={e => setProductDescription(e.target.value)}
-            placeholder="Descrição do produto"
           />
           <input
             type="text"

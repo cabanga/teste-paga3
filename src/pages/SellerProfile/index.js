@@ -72,7 +72,6 @@ function SellerProfile() {
           {products.map(({
             id,
             productName,
-            productDescription,
             productCode,
             productPrice,
             productInstallment
@@ -80,8 +79,6 @@ function SellerProfile() {
             <li key={id}>
             <strong>Produto</strong>
             <p>{productName}</p>
-            <strong>Descrição</strong>
-            <p>{productDescription}</p>
             <strong>Código do Produto</strong>
             <p>{productCode}</p>
             <strong>Número de prestações</strong>    
