@@ -33,6 +33,15 @@
   margin-bottom: 20px;
 }
 
+.productCard .searchButton {
+  padding: .60em;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background: #91CCF4;
+  cursor: pointer;
+}
+
 .cardContent {
   display: flex;
   padding: 14px;
@@ -56,12 +65,6 @@
   color: #0D558A;
   font-size: 20px;
   font-weight: bold;
-}
-
-.productCard img {
-  width: 165px;
-  height: 215px;
-  border-radius: 10px;
 }
 
 .productInfo {

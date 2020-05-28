@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { FiArrowLeft} from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 
-import Computer from '../../assets/pc.jpeg';
 import Fall from '../../assets/fall.svg';
 import './style.css';
 
@@ -18,10 +17,10 @@ function RequestEmpty() {
         
         <div className="productCard">
           <h1>Encontre o seu produto pelo código</h1>
-          <input type="search" placeholder="Código"/>  
+          <input type="search" placeholder="Código do produto" />
+          <button className="searchButton">Buscar</button>  
             
           <div className="cardContent">
-            <img src={Computer} alt="Computador" />
             <ul>
               <li>Nome do produto</li>
               <p>Computador HP i7 8654</p>
