@@ -40,9 +40,17 @@ function Dashboard() {
           <li>
             <strong>Nome do Produto</strong>
             <p>Teste</p>
-            <strong>Imagem</strong>
+            <strong>Loja</strong>
             <p>Teste</p>
-            <strong>Descrição</strong>
+            <strong>Data</strong>
+            <p>Ago 20.02.2020</p>
+
+            <button type="button">
+              <FaTrash size={20} color="#F94545"/>
+            </button>
+          </li>
+          <li>
+            <strong>Nome do Produto</strong>
             <p>Teste</p>
             <strong>Loja</strong>
             <p>Teste</p>
@@ -56,10 +64,6 @@ function Dashboard() {
           <li>
             <strong>Nome do Produto</strong>
             <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
             <strong>Loja</strong>
             <p>Teste</p>
             <strong>Data</strong>
@@ -71,26 +75,6 @@ function Dashboard() {
           </li>
           <li>
             <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
-            <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
-            <button type="button">
-              <FaTrash size={20} color="#F94545"/>
-            </button>
-          </li>
-          <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
             <p>Teste</p>
             <strong>Loja</strong>
             <p>Teste</p>
