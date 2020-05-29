@@ -31,7 +31,8 @@ function NewProduct() {
         headers: {
           Authorization: sellerLogin,
         }
-      })
+      });
+
       history.push('/seller/dashboard');
     } catch (error) {
       alert('Deu merda, tente de novo');
