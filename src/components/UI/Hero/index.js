@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from '../Button/';
-import Analitics from '../../assets/analitics.svg';
+import Analitics from '../../../assets/analitics.svg';
 
 import './styles.css';
 

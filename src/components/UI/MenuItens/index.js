@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Floot from '../../assets/flooop.png';
+import Floot from '../../../assets/flooop.png';
 
 import './styles.css';
 

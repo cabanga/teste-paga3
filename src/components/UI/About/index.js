@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-import Fall from '../../assets/fall.svg';
+import Fall from '../../../assets/fall.svg';
 
 import './styles.css';
 
-export default function About() {
+function About() {
   return (
-    <Fragment>
+    <>
       <section className="about">
         <img src={Fall} alt="Imagem de Background" className="img" />
         <div className="about-content">
@@ -19,6 +19,8 @@ export default function About() {
           </p>
         </div>
       </section>
-    </Fragment>
+    </>
   )
 }
+
+export default About;

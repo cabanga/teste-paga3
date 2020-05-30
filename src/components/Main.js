@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './Header/';
-import Card from './Card/';
-import About from './About/';
+import Header from './UI/Header/';
+import Card from './UI/Card/';
+import About from './UI/About/';
 
 function Main() {
   return (
