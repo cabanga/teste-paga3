@@ -6,34 +6,39 @@ import api from '../../services/api';
 import './style.css';
 
 export default function RegisterSeller() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [telephone, setTelephone] = useState('');
+  const [confirmPassword, setPasswordConfirm] = useState('');
+  const [role, setRole] = useState('');
 
   const history = useHistory();
 
   async function handleRegister(e) {
     e.preventDefault();
 
-    setFirstName('');
-    setLastName('');
     setEmail('');
     setPassword('');
-    setTelephone('');
+    setPasswordConfirm('');
+    setRole('');
 
     const data = {
-      firstName,
-      lastName,
       email,
       password,
-      telephone
+      confirmPassword,
+      role
     };
 
     try {
       // eslint-disable-next-line
-      const response = await api.post('users', data);
+      const response = await api.post('/users', {
+        user: {
+          role: Number(data.role),
+          email: data.email,
+          password: data.password,
+          password_confirmation: data.confirmPassword
+        }
+      });
+      console.log(response);
 
       alert(`Registro realizado com sucesso`);
 
@@ -61,18 +66,11 @@ export default function RegisterSeller() {
           </Link>
         </section>
         <form onSubmit={handleRegister}>
-          <input
-            type="text"
-            placeholder="Primeiro nome"
-            value={firstName}
-            onChange={e => setFirstName(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Último nome"
-            value={lastName}
-            onChange={e => setLastName(e.target.value)}
-          />
+          <select value={role} onChange={e => setRole(e.target.value)}>
+            <option>Selecione uma opção</option>
+            <option value="0">Cliente</option>
+            <option value="10">Empresa</option>
+          </select>
           <input
             type="email"
             placeholder="Email"
@@ -86,10 +84,10 @@ export default function RegisterSeller() {
             onChange={e => setPassword(e.target.value)}
           />
           <input
-            type="tel"
-            value={telephone}
-            onChange={e => setTelephone(e.target.value)}
-            placeholder="Seu contato"
+            type="password"
+            value={confirmPassword}
+            onChange={e => setPasswordConfirm(e.target.value)}
+            placeholder="Confirme a password"
           />
           <button className="button" type="submit">Cadastrar</button>
         </form>

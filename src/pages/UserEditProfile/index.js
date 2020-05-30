@@ -1,34 +1,27 @@
 import React from 'react';
+import { FiArrowLeft } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
 function EditProfile() {
   return (
-    <>
-      <div className="register-container">
-      <div className="content">
-        <form>
-          <input
-            type="text"
-            placeholder="Nome da Organização"
-          />
-          <input
-            type="email"
-            placeholder="Email da Organização"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-          />
-          <input
-            type="tel"
-            placeholder="Telefone"
-          />
-          <button className="button" type="submit">Salvar</button>
-        </form>
+      <div className="edit-container">
+        <section className="form-edit">
+         <h1>Editar as informações de usuário</h1>
+          <form>
+            <input type="text" placeholder="Primeiro nome" required />
+            <input type="text" placeholder="Último nome" required   />
+            <input type="number" placeholder="Sua idade" required />
+            <input type="text" placeholder="Qual seu género" required />
+            <input type="tel" placeholder="Seu contato telefónico" required />
+          </form>
+          <Link to="/user/dashboard" className="back-link">
+            <FiArrowLeft size={20} color="#F94545"/>
+            Voltar no Perfil
+          </Link>
+        </section>
       </div>
-    </div>
-    </>
   )
 }
 

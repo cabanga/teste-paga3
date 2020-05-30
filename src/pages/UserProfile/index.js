@@ -92,7 +92,7 @@ function Dashboard() {
         <div className="profileLink">
           <img src={Woman} alt="Perfil" />
         </div>
-        <Link to="/editprofile">
+        <Link to="/user/edit/profile">
           Editar perfil    
         </Link>
 

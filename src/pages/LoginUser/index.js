@@ -17,15 +17,11 @@ export default function Logon() {
     setPassword('');
 
     try {
-      const responseUser = await api.post('usersessions', {
+      const responseUser = await api.post('/users/sign_in', {
         email,
         password
       });
-
-      localStorage.setItem('userLogin', email, password);
-      localStorage.setItem('userFirstName', responseUser.data.firstName);
-      localStorage.setItem('userLastName', responseUser.data.lastName);
-
+      console.log(responseUser);
       history.push('/user/dashboard');
       alert('Login feito com sucesso');
     } catch (err) {
