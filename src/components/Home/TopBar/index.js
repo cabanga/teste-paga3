@@ -42,7 +42,7 @@ const styles = theme => ({
   },
   tagline: {
     color: 'white',
-    fontSize: 37,
+    fontSize: 50,   
     display: "inline-block",
     marginTop: 10,
     marginRight: 175,
