@@ -10,9 +10,9 @@ function Hero() {
     <section className="hero">
       <div className="container">
         <div>
-          <h2>
+          <h1>
             As melhores tecnologias em programação, direto ao ponto e do jeito certo.
-          </h2>
+          </h1>
           <p>
             No meio de tanta informação e da quantidade de ferramentas que
             surgem todos os dias, você precisa de alguém que te leve na direção

@@ -9,7 +9,6 @@ header .container {
 
 header img {
   width: 150px;
-  margin-left: 20px;
   padding: 15px 0;
 }
 
@@ -23,7 +22,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #141414;
+  color: #F1F3F6;
   text-transform: uppercase;
   font-size: 14px;
   padding: 24px;
@@ -31,12 +30,5 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-header nav ul .border {
-  background: red;
-  border: 0;
-  border-radius: 5px;
-  padding: 2px;
+  background: #0D558A;
 }
