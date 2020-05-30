@@ -15,8 +15,8 @@ import LoginSeller from './pages/LoginSeller/';
 import RegisterUser from './pages/RegisterUser/';
 import RegisterSeller from './pages/RegisterSeller/';
 
-import Main from './components/Home/Main';
-import ScrollToTop from './components/Home/ScrollTop';
+import Main from './components/Main';
+import ScrollToTop from './components/ScrollTop';
 
 export default props => (
   <BrowserRouter>

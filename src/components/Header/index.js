@@ -2,17 +2,15 @@ import React from 'react';
 
 import './styles.css';
 
-import Logo from '../Logo/';
 import MenuItem from '../MenuItens/';
+import Hero from '../Hero/';
 
 function Header() {
   return (
-    <header>
-      <div className="container">
-        <Logo />
+      <div className="bc-header">
         <MenuItem />
+        <Hero />
       </div>
-    </header>
   )
 }
 

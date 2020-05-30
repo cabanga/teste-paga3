@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Fall from '../../../assets/fall.svg';
+import Fall from '../../assets/fall.svg';
 
 import './styles.css';
 
