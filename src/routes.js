@@ -9,11 +9,8 @@ import UserProfile from './pages/UserProfile/';
 import SellerProfile from './pages/SellerProfile/';
 import NewProduct from './pages/NewProduct/';
 
-import LoginUser from './pages/LoginUser/';
-import LoginSeller from './pages/LoginSeller/';
-
-import RegisterUser from './pages/RegisterUser/';
-import RegisterSeller from './pages/RegisterSeller/';
+import Login from './pages/Login/';
+import Register from './pages/Register/';
 
 import Main from './components/Main';
 import ScrollToTop from './components/ScrollTop';
@@ -24,11 +21,8 @@ export default props => (
       <Switch>
         <Route exact path="/" component={Main} />
         
-        <Route exact path="/login/user" component={LoginUser} />
-        <Route exact path="/login/seller" component={LoginSeller} />
-        
-        <Route exact path="/register/user" component={RegisterUser} />
-        <Route exact path="/register/seller" component={RegisterSeller} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
         
         <Route exact path="/request/completed" component={RequestCompleted} />
         <Route exact path="/comprar" component={BuyProduct} />
