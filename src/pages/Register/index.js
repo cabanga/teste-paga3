@@ -55,14 +55,9 @@ export default function RegisterSeller() {
         <h1>Cadastra-se na Paga3</h1>
           <p>Pagar por prestações agora ficou mais fácil.</p>
           
-          <Link to="/login/user" className="back-link">
+          <Link to="/login" className="back-link">
             <FiArrowLeft size={20} color="#F94545"/>
             Fazer login
-          </Link>
-
-          <Link to="/register/seller" className="back-link">
-            <FiUserPlus size={20} color="#F94545"/>
-            Cadastre sua loja
           </Link>
         </section>
         <form onSubmit={handleRegister}>
