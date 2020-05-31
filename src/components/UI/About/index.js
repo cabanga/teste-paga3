@@ -6,20 +6,21 @@ import './styles.css';
 
 function About() {
   return (
-    <>
-      <section className="about">
-        <img src={Fall} alt="Imagem de Background" className="img" />
-        <div className="about-content">
-          <h1>Quem somos</h1>
+    <section className="about">
+      <div className="container">
+         <img src={Fall} alt="Analise" />
+        <div>
+          <h1>
+            Sobre Nós
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam distinctio maxime dignissimos et ut? Et sequi dolorum aut saepe nemo dolor odio libero laborum, minima temporibus reprehenderit incidunt perspiciatis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut commodi voluptatem rerum libero cumque, sunt quo explicabo blanditiis reprehenderit, sed harum expedita! Culpa expedita ut quam veritatis, in illum ipsam?
+            No meio de tanta informação e da quantidade de ferramentas que
+            surgem todos os dias, você precisa de alguém que te leve na direção
+            certa.
           </p>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 

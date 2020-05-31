@@ -6,10 +6,21 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  height: 100vh;
   font: 400 14px Nunito ,sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   background: #F9F9F9;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 input,

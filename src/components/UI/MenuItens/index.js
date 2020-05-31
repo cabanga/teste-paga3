@@ -11,7 +11,7 @@ function MenuItens() {
       <div className="container">
         <img src={Floot} alt="Paga3" />
         
-        <div className="menu-section">
+        <div className="menu-section on">
           <div className="menu-toggle">
             <div className="one"></div>
             <div className="two"></div>
