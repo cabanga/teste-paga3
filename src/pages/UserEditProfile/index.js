@@ -20,6 +20,7 @@ function EditProfile() {
             <input type="text" placeholder="Qual seu género" required />
             <input type="tel" placeholder="Seu contato telefónico" required />
           </form>
+          <button className="button" type="submit">Salvar</button>
         </section>
       </div>
   )
