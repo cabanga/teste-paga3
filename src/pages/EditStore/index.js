@@ -6,9 +6,9 @@ import './styles.css';
 
 function EditStore() {
   return (
-    <div className="store-container">
+    <div className="edit-store">
         <section className="store-form">
-          <Link to="/user/dashboard" className="back-link">
+          <Link to="/store/dashboard" className="back-link">
             <FiArrowLeft size={20} color="#F94545"/>
             Voltar no Perfil
           </Link>
