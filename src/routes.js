@@ -3,8 +3,9 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import FindProduct from './pages/FindProduct/';
 
-import UserEditProfile from './pages/UserEditProfile/';
-import SellerEditProfile from './pages/SellerEditProfile/';
+import EditeUser from './pages/EditUser/';
+import EditSeller from './pages/EditSeller/';
+import EditStore from './pages/EditStore/';
 import UserProfile from './pages/UserProfile/';
 import SellerProfile from './pages/SellerProfile/';
 import NewStore from './pages/NewStore/';
@@ -25,8 +26,9 @@ export default props => (
         <Route exact path="/register" component={Register} />
         
         <Route exact path="/comprar" component={FindProduct} />
-        <Route exact path="/edit-info-user" component={UserEditProfile} />
-        <Route exact path="/edit-info-seller" component={SellerEditProfile} />
+        <Route exact path="/edit-info-user" component={EditeUser} />
+        <Route exact path="/edit-info-seller" component={EditSeller} />
+        <Route exact path="/edit-info-store" component={EditStore} />
         <Route exact path="/user/dashboard" component={UserProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
         <Route exact path="/seller/new-store" component={NewStore} />
