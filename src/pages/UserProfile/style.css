@@ -10,12 +10,12 @@
 }
 
 .shopping .shopping-icon {
-  font-size: 75px;
+  font-size: 7.5rem;
   color: #FFFFFF;
 }
 
 .shopping h1 {
-  font-size: 28px;
+  font-size: 2.8rem;
   color: #FFFFFF;
 }
 
@@ -70,7 +70,7 @@
 .profileMain ul li p {
   color: #737380;
   line-height: 21px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .profileAside {
@@ -79,13 +79,13 @@
 
 .mainInfo h1 {
   color: #0D55BA;
-  font-size: 37px;
+  font-size: 3.7rem;
   font-weight: bold;
 }
 
 .mainInfo h3 {
   color: #141414;
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-bottom: 30px;
 }
 
@@ -128,7 +128,7 @@
 
 .profileAside h2 {
   color: #0D55BA;
-  font-size: 34px;
+  font-size: 3.4rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -136,7 +136,7 @@
 .profileAside h4 {
   color: #0D55BA;
   opacity: 0.5;
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
 
@@ -164,10 +164,16 @@
 .dash-info-bank span {
   color: #5CA2D5;
   opacity: 0.5;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .dash-info-bank p {
   margin-bottom: 10px;
   color: #0D55BA;
+}
+
+@media (max-width: 540px) {
+  .profileMain ul {
+    grid-template-columns: none;
+  }
 }

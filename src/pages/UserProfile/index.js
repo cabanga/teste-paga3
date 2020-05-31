@@ -32,8 +32,8 @@ function Dashboard() {
 
       <main className="profileMain">
         <section className="mainInfo">
-          <h1>Dashboard de Gestão</h1>
-          <h3>Gerencie melhor as suas contas</h3>
+          <h1>Todos os produtos adquiridos</h1>
+          <h3>Gerencie melhor as suas compras</h3>
         </section>
     
         <ul>
