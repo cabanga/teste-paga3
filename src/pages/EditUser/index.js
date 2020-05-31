@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-function EditProfile() {
+function EditUser() {
   return (
       <div className="edit-container">
         <section className="form-edit">
@@ -26,4 +26,4 @@ function EditProfile() {
   )
 }
 
-export default EditProfile;
+export default EditUser;
