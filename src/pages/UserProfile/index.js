@@ -1,11 +1,11 @@
 import React  from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FaPowerOff, FaTrash } from 'react-icons/fa';
+import { FaPowerOff, FaTrash, FaShoppingBasket } from 'react-icons/fa';
 
 import Woman from '../../assets/woman.jpg';
 import './style.css';
 
-function SellerProfile() {
+function UserProfile() {
   const history = useHistory();
 
   function handleLogout() {
@@ -15,62 +15,76 @@ function SellerProfile() {
   }
 
   return (
-    <div className="product">
-      <aside className="product-profile">
+    <div className="user">
+      <aside className="user-profile">
         <img src={Woman} alt="Logotipo da empresa" />
-        <p><Link to="/edit-info">Editar perfil</Link></p>
+        <p><Link to="/edit-info-user">Editar perfil</Link></p>
+        <div className="user-info">
+          <span>Fernando dos Santos</span>
+        </div>
       </aside>
 
-      <main className="main-profile">
-        <span>NCR Angola</span>
+      <main className="main">
         <header>
-          <Link className="add-store" to="/seller/new-store">Adicionar Loja</Link>
+          <Link className="btn-add" to="/comprar">
+            <FaShoppingBasket size={32} color="#F1F3F6"/>
+           <span>Comprar</span>
+          </Link>
           <button onClick={handleLogout} type="button" className="button">
           <FaPowerOff size={18} color="#F94545" />
         </button>
         </header>
-        <h1>Lojas cadastradas</h1>
+
+         <h1>Todos os produtos adquiridos</h1>
         <ul>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
             <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <p>250.000,00 AOA</p>
+            <strong>Loja</strong>
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Valor do produto</strong>
             <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Loja</strong>
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Valor do produto</strong>
+            <p>250.000,00 AOA</p>
+            <strong>Loja</strong>
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Valor do produto</strong>
+            <p>250.000,00 AOA</p>
+            <strong>Loja</strong>
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
@@ -81,4 +95,4 @@ function SellerProfile() {
   )
 }
 
-export default SellerProfile;
+export default UserProfile;

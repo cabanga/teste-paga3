@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
-import RequestCompleted from './pages/RequestCompleted/';
 import BuyProduct from './pages/BuyProduct/';
 
 import UserEditProfile from './pages/UserEditProfile/';
@@ -24,9 +23,8 @@ export default props => (
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         
-        <Route exact path="/request/completed" component={RequestCompleted} />
         <Route exact path="/comprar" component={BuyProduct} />
-        <Route exact path="/user/edit/profile" component={UserEditProfile} />
+        <Route exact path="/edit-info-user" component={UserEditProfile} />
         <Route exact path="/user/dashboard" component={UserProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
         <Route exact path="/seller/new-store" component={NewStore} />
