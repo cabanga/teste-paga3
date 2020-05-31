@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FiArrowLeft } from 'react-icons/fi';
+import { FiLogIn } from 'react-icons/fi';
 
 import api from '../../services/api';
 import './style.css';
@@ -81,7 +81,7 @@ export default function RegisterSeller() {
           />
           <button className="button" type="submit">Cadastrar</button>
           <Link to="/login" className="back-link">
-            <FiArrowLeft size={20} color="#F94545"/>
+            <FiLogIn size={20} color="#F94545"/>
             Fazer login
           </Link>
         </form>
