@@ -34,7 +34,7 @@ function SellerProfile() {
         <h1>Lojas cadastradas</h1>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/store/dashboard">
               <strong>Nome da Loja</strong>
               <p>NCR Angola Online</p>
               <strong>Categória</strong>
@@ -47,7 +47,7 @@ function SellerProfile() {
             </button>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/store/dashboard">
               <strong>Nome da Loja</strong>
               <p>NCR Angola Online</p>
               <strong>Categória</strong>
@@ -60,7 +60,7 @@ function SellerProfile() {
             </button>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/store/dashboard">
               <strong>Nome da Loja</strong>
               <p>NCR Angola Online</p>
               <strong>Categória</strong>
@@ -73,7 +73,7 @@ function SellerProfile() {
             </button>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/store/dashboard">
               <strong>Nome da Loja</strong>
               <p>NCR Angola Online</p>
               <strong>Categória</strong>
