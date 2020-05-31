@@ -18,6 +18,9 @@ import Register from './pages/Register/';
 import Main from './components/Main';
 import ScrollToTop from './components/ScrollTop';
 
+
+import NotFound from './pages/NotFound/';
+
 export default props => (
   <BrowserRouter>
     <ScrollToTop>
@@ -36,6 +39,7 @@ export default props => (
         <Route exact path="/seller/dashboard" component={SellerProfile} />
         <Route exact path="/seller/new-store" component={NewStore} />
         <Route exact path="/store/new-product" component={NewProduct} />
+        <Route component={NotFound} />
       </Switch>
     </ScrollToTop>
   </BrowserRouter>
