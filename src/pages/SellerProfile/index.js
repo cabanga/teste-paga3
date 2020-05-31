@@ -27,7 +27,7 @@ function SellerProfile() {
         <header>
           <span>NCR Angola</span>
 
-          <Link className="add-product" to="/product/new">Adicionar Loja</Link>
+          <Link className="add-store" to="/seller/new-store">Adicionar Loja</Link>
           <button onClick={handleLogout} type="button" className="button">
           <FaPowerOff size={18} color="#F94545" />
         </button>
@@ -37,6 +37,8 @@ function SellerProfile() {
           <li>
             <strong>Nome da Loja</strong>
             <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
             <strong>Localização</strong>
             <p>Talatona</p>
             <button type="button">
@@ -46,6 +48,8 @@ function SellerProfile() {
           <li>
             <strong>Nome da Loja</strong>
             <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
             <strong>Localização</strong>
             <p>Talatona</p>
             <button type="button">
@@ -55,6 +59,8 @@ function SellerProfile() {
           <li>
             <strong>Nome da Loja</strong>
             <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
             <strong>Localização</strong>
             <p>Talatona</p>
             <button type="button">
@@ -64,6 +70,8 @@ function SellerProfile() {
           <li>
             <strong>Nome da Loja</strong>
             <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
             <strong>Localização</strong>
             <p>Talatona</p>
             <button type="button">

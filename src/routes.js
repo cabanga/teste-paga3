@@ -7,7 +7,7 @@ import BuyProduct from './pages/BuyProduct/';
 import UserEditProfile from './pages/UserEditProfile/';
 import UserProfile from './pages/UserProfile/';
 import SellerProfile from './pages/SellerProfile/';
-import NewProduct from './pages/NewProduct/';
+import NewStore from './pages/NewStore/';
 
 import Login from './pages/Login/';
 import Register from './pages/Register/';
@@ -29,7 +29,7 @@ export default props => (
         <Route exact path="/user/edit/profile" component={UserEditProfile} />
         <Route exact path="/user/dashboard" component={UserProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
-        <Route exact path="/product/new" component={NewProduct} />
+        <Route exact path="/seller/new-store" component={NewStore} />
       </Switch>
     </ScrollToTop>
   </BrowserRouter>
