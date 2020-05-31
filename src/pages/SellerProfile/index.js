@@ -34,45 +34,53 @@ function SellerProfile() {
         <h1>Lojas cadastradas</h1>
         <ul>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <Link to="/">
+              <strong>Nome da Loja</strong>
+              <p>NCR Angola Online</p>
+              <strong>Categória</strong>
+              <p>Informática</p>
+              <strong>Localização</strong>
+              <p>Talatona</p>
+            </Link>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <Link to="/">
+              <strong>Nome da Loja</strong>
+              <p>NCR Angola Online</p>
+              <strong>Categória</strong>
+              <p>Informática</p>
+              <strong>Localização</strong>
+              <p>Talatona</p>
+            </Link>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <Link to="/">
+              <strong>Nome da Loja</strong>
+              <p>NCR Angola Online</p>
+              <strong>Categória</strong>
+              <p>Informática</p>
+              <strong>Localização</strong>
+              <p>Talatona</p>
+            </Link>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <Link to="/">
+              <strong>Nome da Loja</strong>
+              <p>NCR Angola Online</p>
+              <strong>Categória</strong>
+              <p>Informática</p>
+              <strong>Localização</strong>
+              <p>Talatona</p>
+            </Link>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
