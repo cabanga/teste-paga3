@@ -1,20 +1,13 @@
-import React from 'react';
-import {
-  FaShoppingBasket,
-  FaPowerOff,
-  FaTrash
-} from 'react-icons/fa';
+import React  from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import { FaPowerOff, FaTrash } from 'react-icons/fa';
 
-import './style.css';
 import Woman from '../../assets/woman.jpg';
+import './style.css';
 
-function Dashboard() {
-  const userFirstName = localStorage.getItem('userFirstName');
-  const userLastName = localStorage.getItem('userLastName');
-
+function SellerProfile() {
   const history = useHistory();
-  
+
   function handleLogout() {
     localStorage.clear();
 
@@ -22,107 +15,70 @@ function Dashboard() {
   }
 
   return (
-    <div className="profileContainer">
-      <aside className="profile">
-        <Link to="/comprar" className="shopping">
-          <FaShoppingBasket className="shopping-icon" />
-          <h1>Fazer compra</h1>
-        </Link>
+    <div className="product">
+      <aside className="product-profile">
+        <img src={Woman} alt="Logotipo da empresa" />
+        <p><Link to="/edit-info">Editar perfil</Link></p>
       </aside>
 
-      <main className="profileMain">
-        <section className="mainInfo">
-          <h1>Todos os produtos adquiridos</h1>
-          <h3>Gerencie melhor as suas compras</h3>
-        </section>
-    
+      <main className="main-profile">
+        <span>NCR Angola</span>
+        <header>
+          <Link className="add-store" to="/seller/new-store">Adicionar Loja</Link>
+          <button onClick={handleLogout} type="button" className="button">
+          <FaPowerOff size={18} color="#F94545" />
+        </button>
+        </header>
+        <h1>Lojas cadastradas</h1>
         <ul>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Categória</strong>
+            <p>Informática</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
         </ul>
-      </main>  
-      
-      <aside className="profile profileAside">
-        <div className="profileLink">
-          <img src={Woman} alt="Perfil" />
-        </div>
-        <Link to="/user/edit/profile">
-          Editar perfil    
-        </Link>
-
-        <h2>{userFirstName} {userLastName}</h2>
-        <h4>Conta Verificada</h4>
-        <section className="dash-info">
-          <div className="dash-info-card">
-            <h3>Meu Salário</h3>
-            <p>AOA 200.000,00</p>
-          </div>
-        </section>
-      
-          <section className="dash-info-bank">
-            <span>Nome do Banco:</span>
-            <p>Banco Millennium Atlantico</p>
-            <span>IBAN:</span>
-            <p>AO6 0000000000000022</p>
-            <span>Nome do Banco:</span>
-            <p>Banco Millennium Atlantico</p>
-            <span>IBAN:</span>
-            <p>AO6 0000000000000022</p>  
-          </section>
-
-        <button onClick={handleLogout} type="button" className="button">
-          <FaPowerOff size={18} />
-        </button> 
-      </aside>
-    
-      </div>   
+      </main>
+    </div>
   )
 }
 
-export default Dashboard;
+export default SellerProfile;

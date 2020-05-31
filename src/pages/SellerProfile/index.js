@@ -29,8 +29,8 @@ function SellerProfile() {
           <FaPowerOff size={18} color="#F94545" />
         </button>
         </header>
-        <h1>Lojas cadastradas</h1>
         <ul>
+          <h1>Lojas cadastradas</h1>
           <li>
             <strong>Nome da Loja</strong>
             <p>NCR Angola Online</p>

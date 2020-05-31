@@ -82,15 +82,17 @@
   border-color: #999;
 }
 
+.main-profile h1 {
+  margin-top: 80px;
+  margin-bottom: 14px;
+  color: #F1F3F6;
+}
+
 .main-profile ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   list-style: none;
-}
-
-.main-profile ul h1 {
-  color: #F1F3F6;
 }
 
 .main-profile ul li {
@@ -169,8 +171,11 @@
   }
   .main-profile ul {
     padding: 10px;
-    width: 557;
+    width: 465px;
     grid-template-columns: none;
+  }
+  .main-profile h1 {
+    padding-left: 10px;
   }
   .main-profile span {
     margin-left: 160px;
