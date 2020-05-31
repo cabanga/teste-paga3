@@ -7,6 +7,7 @@ import EditeUser from './pages/EditUser/';
 import EditSeller from './pages/EditSeller/';
 import EditStore from './pages/EditStore/';
 import UserProfile from './pages/UserProfile/';
+import StoreProfile from './pages/StoreProfile/';
 import SellerProfile from './pages/SellerProfile/';
 import NewStore from './pages/NewStore/';
 
@@ -30,6 +31,7 @@ export default props => (
         <Route exact path="/edit-info-seller" component={EditSeller} />
         <Route exact path="/edit-info-store" component={EditStore} />
         <Route exact path="/user/dashboard" component={UserProfile} />
+        <Route exact path="/store/dashboard" component={StoreProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
         <Route exact path="/seller/new-store" component={NewStore} />
       </Switch>
