@@ -12,12 +12,12 @@
 
 .product-profile span {
   color: #F1F3F6;
-  font-size: 14px;
+  font-size: 1.4rem;
   opacity: 0.5;
 }
 
 .product-profile h1 {
-  font-size: 13px;
+  font-size: 1.3rem;
   margin: 4px 0 10px 0;
   color: #5CA2D5;
 }
@@ -56,8 +56,8 @@
   align-items: center;
 }
 
-.main-profile header span {
-  font-size: 37px;
+.main-profile span {
+  font-size: 3.7rem;
   margin-left: 24px;
   color: #F1F3F6;
 }
@@ -84,7 +84,7 @@
 
 .main-profile h1 {
   margin-top: 80px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   color: #F1F3F6;
 }
 
@@ -126,8 +126,8 @@
 
 .main-profile ul li p {
   color: #737380;
-  line-height: 21px;
-  font-size: 16px;
+  line-height: 2.1rem;
+  font-size: 1.6rem;
 }
 
 .add-store {
@@ -142,11 +142,45 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
+  font-size: 1.8rem;
+  line-height: 6rem;
   transition: filter 0.2s;
 }
 
 .add-store:hover {
   filter: brightness(90%);
+}
+
+@media (max-width: 540px) {
+  .product {
+    flex-direction: column;
+  }
+  .main-profile {
+    padding: 10px;
+  }
+  .main-profile header {
+    justify-content: center;
+  }
+  .product-profile {
+    min-height: 0;
+    text-align: center;
+  }
+  .product-profile img {
+    margin: 0;
+    
+  }
+  .main-profile ul {
+    padding: 10px;
+    width: 465px;
+    grid-template-columns: none;
+  }
+  .main-profile h1 {
+    padding-left: 10px;
+  }
+  .main-profile span {
+    margin-left: 160px;
+  }
+  .main-profile header a {
+    margin-left: 2px;
+  }
 }

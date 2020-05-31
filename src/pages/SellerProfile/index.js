@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FaPowerOff, FaTrash } from 'react-icons/fa';
 
 import Woman from '../../assets/woman.jpg';
 import './style.css';
-
-import api from '../../services/api';
 
 function SellerProfile() {
   const history = useHistory();
@@ -24,9 +22,8 @@ function SellerProfile() {
       </aside>
 
       <main className="main-profile">
+        <span>NCR Angola</span>
         <header>
-          <span>NCR Angola</span>
-
           <Link className="add-store" to="/seller/new-store">Adicionar Loja</Link>
           <button onClick={handleLogout} type="button" className="button">
           <FaPowerOff size={18} color="#F94545" />
