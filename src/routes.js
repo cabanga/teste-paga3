@@ -10,6 +10,7 @@ import UserProfile from './pages/UserProfile/';
 import StoreProfile from './pages/StoreProfile/';
 import SellerProfile from './pages/SellerProfile/';
 import NewStore from './pages/NewStore/';
+import NewProduct from './pages/NewProduct/';
 
 import Login from './pages/Login/';
 import Register from './pages/Register/';
@@ -34,6 +35,7 @@ export default props => (
         <Route exact path="/store/dashboard" component={StoreProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
         <Route exact path="/seller/new-store" component={NewStore} />
+        <Route exact path="/store/new-product" component={NewProduct} />
       </Switch>
     </ScrollToTop>
   </BrowserRouter>
