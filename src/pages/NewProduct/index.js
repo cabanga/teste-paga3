@@ -18,15 +18,19 @@ function NewProduct() {
         <form>
           <input
             type="text"  
-            placeholder="Nome da Loja" 
+            placeholder="Nome do produto" 
           />
            <input
             type="text"  
-            placeholder="Categória da Loja" 
+            placeholder="Preço do produto" 
           />
           <input
             type="text" 
-            placeholder="Endereço da Loja"
+            placeholder="Código do produto"
+          />
+          <input
+            type="text" 
+            placeholder="Número de prestações"
           />
           <button className="button" type="submit">Cadastrar</button>
         </form>
