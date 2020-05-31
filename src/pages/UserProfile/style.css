@@ -6,13 +6,17 @@
 
 .user-profile {
   min-height: 100vh;
-  padding: 2rem 6rem 0 4rem;
+  padding: 2rem 6rem 2rem 4rem;
   background-color: #222;
 }
 
-.user-profile img {
-  width: 145px;
-  height: 145px;
+.user-picture {
+  text-align: center;
+}
+
+.user-picture img {
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
 }
 
@@ -29,6 +33,28 @@
 
 .user-profile p a:hover {
   opacity: 0.8;
+}
+
+.user-info {
+  padding: 2em;
+  background-color: #141414;
+  margin-top: 10px;
+}
+
+.user-info h3 {
+  color: #0D558A;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.user-info span {
+  color: #F1F3F6;
+}
+
+.user-info h4 {
+  color: #F9F9F9;
+  margin-bottom: 5px;
 }
 
 .main {

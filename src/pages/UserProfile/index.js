@@ -17,10 +17,44 @@ function UserProfile() {
   return (
     <div className="user">
       <aside className="user-profile">
-        <img src={Woman} alt="Logotipo da empresa" />
-        <p><Link to="/edit-info-user">Editar perfil</Link></p>
+        <div className="user-picture">
+          <img src={Woman} alt="Logotipo da empresa" />
+        </div>
+        <p>
+          <Link to="/edit-info-user">Editar perfil</Link>
+        </p>
         <div className="user-info">
-          <span>Fernando dos Santos</span>
+          <h3>Informações pessoais</h3>
+          <span>Nome completo</span>
+          <h4>Fernando dos Santos</h4>
+          <span>Contato telefónico</span>
+          <h4>923215717</h4>
+          <span>Idade</span>
+          <h4>23 anos</h4>
+          <span>Gênero</span>
+          <h4>Masculino</h4>
+        </div>
+        <div className="user-info">
+          <h3>Entedidade empregadora</h3>
+          <span>Nome</span>
+          <h4>Paga3</h4>
+          <span>Função</span>
+          <h4>Desenvolvedor</h4>
+          <span>Valor do sálario</span>
+          <h4>5000.000, 00 AOA</h4>
+          <span>Possui crédito</span>
+          <h4>Sim</h4>
+          <span>Valor crédito</span>
+          <h4>100.000, 00 AOA</h4>
+        </div>
+        <div className="user-info">
+          <h3>Informações bancarias</h3>
+          <span>Banco em que recebe o sálario</span>
+          <h4>Banco Bic</h4>
+          <span>Número da conta</span>
+          <h4>937534424252</h4>
+          <span>Número do IBAN</span>
+          <h4>A06222229376335332</h4>
         </div>
       </aside>
 
