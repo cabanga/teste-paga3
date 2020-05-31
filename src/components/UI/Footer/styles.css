@@ -1,0 +1,28 @@
+footer {
+  background: #5CA2D5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  color: #F1F4F6;
+  }
+
+footer h1 {
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer ul {
+  display: inline-block;
+}
+
+footer ul li {
+  margin-top: 10px;
+  font-size: 14px;
+}
