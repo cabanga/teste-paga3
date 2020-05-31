@@ -22,11 +22,14 @@
   color: #5CA2D5;
 }
 
-.product-profile img {
-  width: 195px;
-  height: 195px;
+.seller-picture {
+  text-align: center;
+}
+
+.seller-picture img {
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
-  margin: 0 0 20px 40px;
 }
 
 .product-profile p {
@@ -54,6 +57,11 @@
 .main-profile header {
   display: flex;
   align-items: center;
+}
+
+.main-profile h1 {
+  color: #F1F3F6;
+  margin-bottom: 20px;
 }
 
 .main-profile span {

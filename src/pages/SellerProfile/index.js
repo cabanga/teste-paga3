@@ -17,7 +17,9 @@ function SellerProfile() {
   return (
     <div className="product">
       <aside className="product-profile">
-        <img src={Woman} alt="Logotipo da empresa" />
+        <div className="seller-picture">
+          <img src={Woman} alt="Logotipo da empresa" />
+        </div>
         <p><Link to="/edit-info">Editar perfil</Link></p>
       </aside>
 
