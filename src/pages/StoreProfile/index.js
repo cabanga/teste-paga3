@@ -1,78 +1,75 @@
 import React  from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FaPowerOff, FaTrash } from 'react-icons/fa';
+import { FaTrash } from 'react-icons/fa';
 
 import Woman from '../../assets/woman.jpg';
-import './style.css';
+import './styles.css';
 
-function SellerProfile() {
-  const history = useHistory();
-
-  function handleLogout() {
-    localStorage.clear();
-
-    history.push('/');
-  }
-
+function StoreProfile() {
   return (
-    <div className="product">
-      <aside className="product-profile">
-        <div className="seller-picture">
+    <div className="store-container">
+      <aside className="store-content">
+        <div className="store-picture">
           <img src={Woman} alt="Logotipo da empresa" />
         </div>
-        <p><Link to="/edit-info-seller">Editar perfil</Link></p>
+        <p><Link to="/edit-info-store">Editar perfil</Link></p>
       </aside>
 
-      <main className="main-profile">
-        <span>NCR Angola</span>
+      <main className="store-profile">
+        <span>Talatona</span>
         <header>
-          <Link className="add-store" to="/seller/new-store">Adicionar Loja</Link>
-          <button onClick={handleLogout} type="button" className="button">
-          <FaPowerOff size={18} color="#F94545" />
-        </button>
+          <Link className="add-store" to="/new/product">Adicionar Loja</Link>
         </header>
-        <h1>Lojas cadastradas</h1>
+        <h1>Produtos cadastrados</h1>
         <ul>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Nome do produto</strong>
+            <p>iPhone 5s</p>
+            <strong>Preço</strong>
+            <p>250.000,00 AOA</p>
+            <strong>Código do produto</strong>
+            <p>AS2DGA</p>
+            <strong>Prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Nome do produto</strong>
+            <p>iPhone 5s</p>
+            <strong>Preço</strong>
+            <p>250.000,00 AOA</p>
+            <strong>Código do produto</strong>
+            <p>AS2DGA</p>
+            <strong>Prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Nome do produto</strong>
+            <p>iPhone 5s</p>
+            <strong>Preço</strong>
+            <p>250.000,00 AOA</p>
+            <strong>Código do produto</strong>
+            <p>AS2DGA</p>
+            <strong>Prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome da Loja</strong>
-            <p>NCR Angola Online</p>
-            <strong>Categória</strong>
-            <p>Informática</p>
-            <strong>Localização</strong>
-            <p>Talatona</p>
+            <strong>Nome do produto</strong>
+            <p>iPhone 5s</p>
+            <strong>Preço</strong>
+            <p>250.000,00 AOA</p>
+            <strong>Código do produto</strong>
+            <p>AS2DGA</p>
+            <strong>Prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
@@ -83,4 +80,4 @@ function SellerProfile() {
   )
 }
 
-export default SellerProfile;
+export default StoreProfile;
