@@ -54,11 +54,6 @@ export default function RegisterSeller() {
         <section>
         <h1>Cadastra-se na Paga3</h1>
           <p>Pagar por prestações agora ficou mais fácil.</p>
-          
-          <Link to="/login" className="back-link">
-            <FiArrowLeft size={20} color="#F94545"/>
-            Fazer login
-          </Link>
         </section>
         <form onSubmit={handleRegister}>
           <select value={role} onChange={e => setRole(e.target.value)}>
@@ -85,6 +80,10 @@ export default function RegisterSeller() {
             placeholder="Confirme a password"
           />
           <button className="button" type="submit">Cadastrar</button>
+          <Link to="/login" className="back-link">
+            <FiArrowLeft size={20} color="#F94545"/>
+            Fazer login
+          </Link>
         </form>
       </div>
     </div>

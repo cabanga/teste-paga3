@@ -27,14 +27,14 @@
 }
 
 .register-container .content section h1 {
-  margin: 64px 0 32px;
-  font-size: 32px;
+  margin: 0 0 10px;
+  font-size: 3.2rem;
 }
 
 .register-container .content section p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #737380;
-  line-height: 32px;
+  line-height: 3.2rem;
 }
 
 .register-container .content form {
@@ -45,4 +45,13 @@
 .register-container .content form input,
 select {
   margin-top: 8px;
+}
+
+@media (max-width: 540px) {
+  .register-container .content {
+    flex-direction: column;
+  }
+  .register-container {
+    height: 50vh;
+  }
 }
