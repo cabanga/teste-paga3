@@ -18,7 +18,7 @@ function StoreProfile() {
       <main className="store-profile">
         <span>Talatona</span>
         <header>
-          <Link className="add-store" to="/new/product">Adicionar Loja</Link>
+          <Link className="add-store" to="/store/new-product">Adicionar Loja</Link>
         </header>
         <h1>Produtos cadastrados</h1>
         <ul>
