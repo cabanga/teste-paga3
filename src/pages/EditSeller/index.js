@@ -4,7 +4,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 
 import './styles.css';
 
-function SellerEditProfile() {
+function EditSeller() {
   return (
     <div className="edite-container">
         <section className="form-edite">
@@ -25,4 +25,4 @@ function SellerEditProfile() {
   )
 }
 
-export default SellerEditProfile;
+export default EditSeller;
