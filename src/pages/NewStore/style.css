@@ -1,4 +1,4 @@
-.new-product {
+.new-store {
   width: 100%;
   max-width: 1120px;
   height: 100vh;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.new-product .content {
+.new-store .store-content {
   width: 100%;
   height: 95vh;
   padding: 96px;
@@ -21,31 +21,31 @@
   align-items: center;
 }
 
-.new-product .content section {
+.new-store .store-content section {
   width: 100%;
   max-width: 380px;
 }
 
-.new-product .content section h1 {
+.new-store .store-content section h1 {
   margin: 10px 0 10px;
   font-size: 3.2rem;
 }
 
-.new-product .content form {
+.new-store .store-content form {
   width: 100%;
   max-width: 450px;
 }
 
-.new-product .content form input,
-.new-product .content form textarea {
+.new-store .store-content form input,
+.new-store .store-content form textarea {
   margin-top: 8px;
 }
 
 @media (max-width: 540px) {
-  .new-product .content {
+  .new-store .store-content {
     flex-direction: column;
   }
-  .new-product {
+  .new-store {
     height: 65vh;
   }
 }

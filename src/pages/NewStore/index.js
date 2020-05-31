@@ -6,8 +6,8 @@ import './style.css';
 
 function NewStore() {
   return (
-    <div className="new-product">
-      <div className="content">
+    <div className="new-store">
+      <div className="store-content">
         <section>
           <Link to="/seller/dashboard" className="back-link">
             <FiArrowLeft size={20} color="#F94545"/>
