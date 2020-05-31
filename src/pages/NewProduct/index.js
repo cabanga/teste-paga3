@@ -35,7 +35,7 @@ function NewProduct() {
 
       history.push('/seller/dashboard');
     } catch (error) {
-      alert('Deu merda, tente de novo');
+      alert('Não foi possível, tente de novo');
     }
   }
 
@@ -43,15 +43,11 @@ function NewProduct() {
     <div className="new-product">
       <div className="content">
         <section>
-        <h1>Paga3</h1>
-        
-        <h1>Cadastrar novo produto</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa tempora consequatur nob.</p>
-          
           <Link to="/seller/dashboard" className="back-link">
             <FiArrowLeft size={20} color="#F94545"/>
            Voltar no Perfil
           </Link>
+        <h1>Cadastrar um novo produto</h1>
         </section>
         <form onSubmit={handleNewProduct}>
           <input

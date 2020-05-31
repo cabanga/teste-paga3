@@ -27,14 +27,8 @@
 }
 
 .new-product .content section h1 {
-  margin: 64px 0 32px;
-  font-size: 32px;
-}
-
-.new-product .content section p {
-  font-size: 18px;
-  color: #737380;
-  line-height: 32px;
+  margin: 10px 0 10px;
+  font-size: 3.2rem;
 }
 
 .new-product .content form {
@@ -45,4 +39,13 @@
 .new-product .content form input,
 .new-product .content form textarea {
   margin-top: 8px;
+}
+
+@media (max-width: 540px) {
+  .new-product .content {
+    flex-direction: column;
+  }
+  .new-product {
+    height: 65vh;
+  }
 }
