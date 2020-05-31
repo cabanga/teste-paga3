@@ -1,0 +1,35 @@
+.store-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-form .back-link {
+  margin-top: 20px;
+}
+
+.store-container .store-form {
+  width: 100%;
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+.store-container .store-form form {
+  margin-top: 10px;
+}
+
+.store-container .store-form h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 540px) {
+  .form-edit .back-link {
+    margin-top: 1rem;
+  }
+}
