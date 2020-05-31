@@ -8,6 +8,10 @@ function EditProfile() {
   return (
       <div className="edit-container">
         <section className="form-edit">
+          <Link to="/user/dashboard" className="back-link">
+            <FiArrowLeft size={20} color="#F94545"/>
+            Voltar no Perfil
+          </Link>
          <h1>Editar as informações de usuário</h1>
           <form>
             <input type="text" placeholder="Primeiro nome" required />
@@ -16,10 +20,6 @@ function EditProfile() {
             <input type="text" placeholder="Qual seu género" required />
             <input type="tel" placeholder="Seu contato telefónico" required />
           </form>
-          <Link to="/user/dashboard" className="back-link">
-            <FiArrowLeft size={20} color="#F94545"/>
-            Voltar no Perfil
-          </Link>
         </section>
       </div>
   )
