@@ -8,37 +8,7 @@ import './style.css';
 import api from '../../services/api';
 
 function SellerProfile() {
-  const [products, setProducts] = useState([]);
   const history = useHistory();
-
-  const sellerLogin = localStorage.getItem('sellerLogin');
-  const sellerName = localStorage.getItem('sellerName');
-  const sellerIban = localStorage.getItem('sellerIban');
-  const sellerAddress = localStorage.getItem('sellerAddress');
-
-  useEffect(() => {
-    api.get('profile', {
-      headers: {
-        Authorization: sellerLogin,
-      }
-    }).then(response => {
-      setProducts(response.data);
-    })
-  }, [sellerLogin]);
-
-  async function handleDeleteProduct(id) {
-    try {
-      await api.delete(`products/${id}`, {
-        headers: {
-          Authorization: sellerLogin,
-        }
-      });
-
-      setProducts(products.filter(product => product.id !== id));
-    } catch (err) {
-      alert('Deu merda');
-    }
-  }
 
   function handleLogout() {
     localStorage.clear();
@@ -50,47 +20,56 @@ function SellerProfile() {
     <div className="product">
       <aside className="product-profile">
         <img src={Woman} alt="Logotipo da empresa" />
-        <span>Empresa</span>
-        <h1>{sellerName}</h1>
-        <span>IBAN</span>
-        <h1>{sellerIban}</h1>
-        <span>Endereço</span>
-        <h1>{sellerAddress}</h1>
+        <p><Link to="/edit-info">Editar perfil</Link></p>
       </aside>
 
       <main className="main-profile">
         <header>
-          <span>{sellerName}</span>
+          <span>NCR Angola</span>
 
-          <Link className="add-product" to="/product/new">Adicionar produto</Link>
+          <Link className="add-product" to="/product/new">Adicionar Loja</Link>
           <button onClick={handleLogout} type="button" className="button">
           <FaPowerOff size={18} color="#F94545" />
         </button>
         </header>
-        <h1>Produtos cadastrados</h1>
+        <h1>Lojas cadastradas</h1>
         <ul>
-          {products.map(({
-            id,
-            productName,
-            productCode,
-            productPrice,
-            productInstallment
-          }) => (
-            <li key={id}>
-            <strong>Produto</strong>
-            <p>{productName}</p>
-            <strong>Código do Produto</strong>
-            <p>{productCode}</p>
-            <strong>Número de prestações</strong>    
-            <p>{productInstallment}</p>
-            <strong>Preço</strong>
-            <p>{Intl.NumberFormat('pt-AO', { style: 'currency', currency: 'AOA' }).format(productPrice)}</p>
-
-            <button onClick={() => handleDeleteProduct(id)} type="button">
+          <li>
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
+            <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
-          ))}
+          <li>
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
+            <button type="button">
+              <FaTrash size={20} color="#F94545"/>
+            </button>
+          </li>
+          <li>
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
+            <button type="button">
+              <FaTrash size={20} color="#F94545"/>
+            </button>
+          </li>
+          <li>
+            <strong>Nome da Loja</strong>
+            <p>NCR Angola Online</p>
+            <strong>Localização</strong>
+            <p>Talatona</p>
+            <button type="button">
+              <FaTrash size={20} color="#F94545"/>
+            </button>
+          </li>
         </ul>
       </main>
     </div>
