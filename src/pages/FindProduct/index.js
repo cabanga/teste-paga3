@@ -5,21 +5,21 @@ import { FiArrowLeft } from 'react-icons/fi';
 import ProductSearch from '../ProductSearch/';
 import './style.css';
 
-function RequestEmpty() {
+function FindProduct() {
   return (
-    <div className="productContainer">
-    <div className="productContent">
+    <div className="find">
+    <div className="find-content">
       <section>
         <Link to="/user/dashboard" className="back-link">
-            <FiArrowLeft size={16} color="#E02041"/>
-           Voltar no Perfil
-          </Link>
+          <FiArrowLeft size={16} color="#E02041"/>
+           <span>Voltar no perfil</span>
+        </Link>
         
-        <div className="productCard">
+        <div className="find-card">
           <h1>Encontre o seu produto pelo código</h1>
           <ProductSearch />
             
-          <div className="cardContent">
+          <div className="find-card-content">
             <ul>
               <li>Nome do produto</li>
               <p>Computador HP i7 8654</p>
@@ -39,4 +39,4 @@ function RequestEmpty() {
   )
 }
 
-export default RequestEmpty;
+export default FindProduct;
