@@ -20,7 +20,7 @@ function SellerProfile() {
         <div className="seller-picture">
           <img src={Woman} alt="Logotipo da empresa" />
         </div>
-        <p><Link to="/edit-info">Editar perfil</Link></p>
+        <p><Link to="/edit-info-seller">Editar perfil</Link></p>
       </aside>
 
       <main className="main-profile">
