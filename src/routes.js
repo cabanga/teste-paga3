@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import FindProduct from './pages/FindProduct/';
 
@@ -22,7 +22,7 @@ import ScrollToTop from './components/ScrollTop';
 import NotFound from './pages/NotFound/';
 
 export default props => (
-  <BrowserRouter>
+  <Router>
     <ScrollToTop>
       <Switch>
         <Route exact path="/" component={Main} />
@@ -42,5 +42,5 @@ export default props => (
         <Route component={NotFound} />
       </Switch>
     </ScrollToTop>
-  </BrowserRouter>
+  </Router>
 )
