@@ -42,7 +42,7 @@ export default function RegisterSeller() {
 
       alert(`Registro realizado com sucesso`);
 
-      history.push('/login/user');
+      history.push('/login');
     } catch (err) {
       alert('Erro no cadastro, tente novamente');
     }

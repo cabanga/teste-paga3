@@ -22,7 +22,7 @@ export default function Logon() {
         password
       });
       console.log(responseUser);
-      history.push('/user/dashboard');
+      history.push('/');
       alert('Login feito com sucesso');
     } catch (err) {
       alert('Erro ao fazer login, tente novamente')
