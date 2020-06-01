@@ -1,0 +1,51 @@
+.new-store {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-store .store-content {
+  width: 100%;
+  height: 95vh;
+  padding: 96px;
+  background: #f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-store .store-content section {
+  width: 100%;
+  max-width: 380px;
+}
+
+.new-store .store-content section h1 {
+  margin: 10px 0 10px;
+  font-size: 3.2rem;
+}
+
+.new-store .store-content form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.new-store .store-content form input,
+.new-store .store-content form textarea {
+  margin-top: 8px;
+}
+
+@media (max-width: 540px) {
+  .new-store .store-content {
+    flex-direction: column;
+  }
+  .new-store {
+    height: 65vh;
+  }
+}

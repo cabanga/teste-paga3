@@ -1,42 +1,46 @@
 import React from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import RequestCompleted from './pages/RequestCompleted/';
-import RequestEmpty from './pages/RequestEmpty/';
+import FindProduct from './pages/FindProduct/';
 
-import UserEditProfile from './pages/UserEditProfile/';
+import EditeUser from './pages/EditUser/';
+import EditSeller from './pages/EditSeller/';
+import EditStore from './pages/EditStore/';
 import UserProfile from './pages/UserProfile/';
+import StoreProfile from './pages/StoreProfile/';
 import SellerProfile from './pages/SellerProfile/';
+import NewStore from './pages/NewStore/';
 import NewProduct from './pages/NewProduct/';
 
-import LoginUser from './pages/LoginUser/';
-import LoginSeller from './pages/LoginSeller/';
+import Login from './pages/Login/';
+import Register from './pages/Register/';
 
-import RegisterUser from './pages/RegisterUser/';
-import RegisterSeller from './pages/RegisterSeller/';
+import Main from './components/Main';
+import ScrollToTop from './components/ScrollTop';
 
-import Main from './components/Home/Main';
-import ScrollToTop from './components/Home/ScrollTop';
+
+import NotFound from './pages/NotFound/';
 
 export default props => (
-  <BrowserRouter>
+  <Router>
     <ScrollToTop>
       <Switch>
         <Route exact path="/" component={Main} />
         
-        <Route exact path="/login/user" component={LoginUser} />
-        <Route exact path="/login/seller" component={LoginSeller} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
         
-        <Route exact path="/register/user" component={RegisterUser} />
-        <Route exact path="/register/seller" component={RegisterSeller} />
-        
-        <Route exact path="/request/completed" component={RequestCompleted} />
-        <Route exact path="/request/empty" component={RequestEmpty} />
-        <Route exact path="/user/edit/profile" component={UserEditProfile} />
+        <Route exact path="/comprar" component={FindProduct} />
+        <Route exact path="/edit-info-user" component={EditeUser} />
+        <Route exact path="/edit-info-seller" component={EditSeller} />
+        <Route exact path="/edit-info-store" component={EditStore} />
         <Route exact path="/user/dashboard" component={UserProfile} />
+        <Route exact path="/store/dashboard" component={StoreProfile} />
         <Route exact path="/seller/dashboard" component={SellerProfile} />
-        <Route exact path="/product/new" component={NewProduct} />
+        <Route exact path="/seller/new-store" component={NewStore} />
+        <Route exact path="/store/new-product" component={NewProduct} />
+        <Route component={NotFound} />
       </Switch>
     </ScrollToTop>
-  </BrowserRouter>
+  </Router>
 )

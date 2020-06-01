@@ -1,20 +1,13 @@
-import React from 'react';
-import {
-  FaShoppingBasket,
-  FaPowerOff,
-  FaTrash
-} from 'react-icons/fa';
+import React  from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import { FaPowerOff, FaTrash, FaShoppingBasket } from 'react-icons/fa';
 
-import './style.css';
 import Woman from '../../assets/woman.jpg';
+import './style.css';
 
-function Dashboard() {
-  const userFirstName = localStorage.getItem('userFirstName');
-  const userLastName = localStorage.getItem('userLastName');
-
+function UserProfile() {
   const history = useHistory();
-  
+
   function handleLogout() {
     localStorage.clear();
 
@@ -22,128 +15,118 @@ function Dashboard() {
   }
 
   return (
-    <div className="profileContainer">
-      <aside className="profile">
-        <Link to="/requestempty" className="shopping">
-          <FaShoppingBasket className="shopping-icon" />
-          <h1>Fazer compra</h1>
-        </Link>
+    <div className="user">
+      <aside className="user-profile">
+        <div className="user-picture">
+          <img src={Woman} alt="Logotipo da empresa" />
+        </div>
+        <p>
+          <Link to="/edit-info-user">Editar perfil</Link>
+        </p>
+        <div className="user-info">
+          <h3>Informações pessoais</h3>
+          <span>Nome completo</span>
+          <h4>Fernando dos Santos</h4>
+          <span>Contato telefónico</span>
+          <h4>923215717</h4>
+          <span>Idade</span>
+          <h4>23 anos</h4>
+          <span>Gênero</span>
+          <h4>Masculino</h4>
+        </div>
+        <div className="user-info">
+          <h3>Entedidade empregadora</h3>
+          <span>Nome</span>
+          <h4>Paga3</h4>
+          <span>Função</span>
+          <h4>Desenvolvedor</h4>
+          <span>Valor do sálario</span>
+          <h4>5000.000, 00 AOA</h4>
+          <span>Possui crédito</span>
+          <h4>Sim</h4>
+          <span>Valor crédito</span>
+          <h4>100.000, 00 AOA</h4>
+        </div>
+        <div className="user-info">
+          <h3>Informações bancarias</h3>
+          <span>Banco em que recebe o sálario</span>
+          <h4>Banco Bic</h4>
+          <span>Número da conta</span>
+          <h4>937534424252</h4>
+          <span>Número do IBAN</span>
+          <h4>A06222229376335332</h4>
+        </div>
       </aside>
 
-      <main className="profileMain">
-        <section className="mainInfo">
-          <h1>Dashboard de Gestão</h1>
-          <h3>Gerencie melhor as suas contas</h3>
-            <ul>
-              <li><Link to="/">Todos</Link></li>
-              <li><Link to="/">Em pagamento</Link></li>
-              <li><Link to="/">Pagas</Link></li>
-            </ul>
-        </section>
-    
+      <main className="main">
+        <header>
+          <Link className="btn-add" to="/comprar">
+            <FaShoppingBasket size={32} color="#F1F3F6"/>
+           <span>Comprar</span>
+          </Link>
+          <button onClick={handleLogout} type="button" className="button">
+          <FaPowerOff size={18} color="#F94545" />
+        </button>
+        </header>
+
+         <h1>Todos os produtos adquiridos</h1>
         <ul>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Categória</strong>
+            <p>250.000,00 AOA</p>
             <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Valor do produto</strong>
+            <p>Informática</p>
             <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Valor do produto</strong>
+            <p>250.000,00 AOA</p>
             <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
           <li>
-            <strong>Nome do Produto</strong>
-            <p>Teste</p>
-            <strong>Imagem</strong>
-            <p>Teste</p>
-            <strong>Descrição</strong>
-            <p>Teste</p>
+            <strong>Nome do produto</strong>
+            <p>Computador HP i7 8654</p>
+            <strong>Valor do produto</strong>
+            <p>250.000,00 AOA</p>
             <strong>Loja</strong>
-            <p>Teste</p>
-            <strong>Data</strong>
-            <p>Ago 20.02.2020</p>
-
+            <p>NCR Angola - Talatona</p>
+            <strong>Número de prestações</strong>
+            <p>3</p>
             <button type="button">
               <FaTrash size={20} color="#F94545"/>
             </button>
           </li>
         </ul>
-      </main>  
-      
-      <aside className="profile profileAside">
-        <div className="profileLink">
-          <img src={Woman} alt="Perfil" />
-        </div>
-        <Link to="/editprofile">
-          Editar perfil    
-        </Link>
-
-        <h2>{userFirstName} {userLastName}</h2>
-        <h4>Conta Verificada</h4>
-        <section className="dash-info">
-          <div className="dash-info-card">
-            <h3>Meu Salário</h3>
-            <p>AOA 200.000,00</p>
-          </div>
-        </section>
-      
-          <section className="dash-info-bank">
-            <span>Nome do Banco:</span>
-            <p>Banco Millennium Atlantico</p>
-            <span>IBAN:</span>
-            <p>AO6 0000000000000022</p>
-            <span>Nome do Banco:</span>
-            <p>Banco Millennium Atlantico</p>
-            <span>IBAN:</span>
-            <p>AO6 0000000000000022</p>  
-          </section>
-
-        <button onClick={handleLogout} type="button" className="button">
-          <FaPowerOff size={18} />
-        </button> 
-      </aside>
-    
-      </div>   
+      </main>
+    </div>
   )
 }
 
-export default Dashboard;
+export default UserProfile;

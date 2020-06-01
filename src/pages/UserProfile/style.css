@@ -1,51 +1,120 @@
-.profileContainer {
+.user {
+  background-color: #F1F3F6;
   display: flex;
   flex-direction: row;
 }
 
-.shopping {
-  padding: 1.5em;
-  border-radius: 5px;
-  background-color: #5CA2D5;
-}
-
-.shopping .shopping-icon {
-  font-size: 75px;
-  color: #FFFFFF;
-}
-
-.shopping h1 {
-  font-size: 28px;
-  color: #FFFFFF;
-}
-
-.profile {
-  padding: 1em 2em;
+.user-profile {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding: 2rem 6rem 2rem 4rem;
+  background-color: #222;
 }
 
-.profileMain {
+.user-picture {
+  text-align: center;
+}
+
+.user-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.user-profile p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.user-profile p a {
+  color: #5CA2D5;
+  text-transform: uppercase;
+}
+
+.user-profile p a:hover {
+  opacity: 0.8;
+}
+
+.user-info {
   padding: 2em;
-  width: 100%;
+  background-color: #141414;
+  margin-top: 10px;
 }
 
-.profileMain ul {
+.user-info h3 {
+  color: #0D558A;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.user-info span {
+  color: #F1F3F6;
+}
+
+.user-info h4 {
+  color: #F9F9F9;
+  margin-bottom: 5px;
+}
+
+.main {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 30px;
+  margin: 32px auto;
+}
+
+.main header {
+  display: flex;
+  align-items: center;
+}
+
+.main header a {
+  width: 260px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.main header button {
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid #dcdce6;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+}
+
+.main header button:hover {
+  border-color: #999;
+}
+
+.main h1 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+  color: #141414;
+  font-weight: bold;
+}
+
+.main ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   list-style: none;
 }
 
-.profileMain ul li {
-  background: #F1F3F6;
+.main ul h1 {
+  color: #F1F3F6;
+}
+
+.main ul li {
+  background: #FFFFFF;
   padding: 24px;
   border-radius: 8px;
   position: relative;
 }
 
-.profileMain ul li button {
+.main ul li button {
   position: absolute;
   right: 24px;
   top: 24px;
@@ -53,120 +122,82 @@
   border: 0;
 }
 
-.profileMain ul li button:hover {
+.main ul li button:hover {
   opacity: 0.8;
 }
 
-.profileMain ul li strong {
+.main ul li strong {
   display: block;
   margin-bottom: 5px;
   color: #141414;
 }
 
-.profileMain ul li p+strong {
+.main ul li p+strong {
   margin-top: 10px;
 }
 
-.profileMain ul li p {
+.main ul li p {
   color: #737380;
-  line-height: 21px;
-  font-size: 16px;
+  line-height: 2.1rem;
+  font-size: 1.6rem;
 }
 
-.profileAside {
-  background-color: #F1F3F6;
-}
-
-.mainInfo h1 {
-  color: #0D55BA;
-  font-size: 37px;
-  font-weight: bold;
-}
-
-.mainInfo h3 {
-  color: #141414;
-  font-size: 18px;
-}
-
-.mainInfo ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.btn-add {
   display: flex;
-}
-
-.mainInfo ul li {
-  padding: .65em;
-  background-color: #F1F3F6;
-  border-radius: 5px;
-  margin-right: 20px;
-}
-
-.mainInfo ul li:hover {
-  background-color: #5CA2D5;
-}
-
-.mainInfo ul li a {
-  color: #91CCF4;
-  font-size: 14px;
-}
-
-.profile img {
-  height: 175px;
-  width: 175px;
-}
-
-.profile a {
-  text-align: center;
-  color: #141414;
-  margin-bottom: 10px;
-}
-
-.profile a:hover {
-  color: #5CA2D5;
-}
-
-.profileAside h2 {
-  color: #0D55BA;
-  font-size: 34px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.profileAside h4 {
-  color: #0D55BA;
-  opacity: 0.5;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.dash-info {
-  background-color: #FFFFFF;
-  padding: 1em;
-  max-width: 25em;
-  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  width: 100%;
+  height: 60px;
+  background: #5CA2D5;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 16px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 6rem;
+  transition: filter 0.2s;
 }
 
-.dash-info-card {
-  margin: 20px;
-  color: #0D55BA;
+.btn-add span {
+  margin: 10px;
 }
 
-.dash-info-bank {
-  margin-top: 20px;
-  background-color: #FFFFFF;
-  padding: 1em;
-  max-width: 25em;
+.btn-add:hover {
+  filter: brightness(90%);
 }
 
-.dash-info-bank span {
-  color: #5CA2D5;
-  opacity: 0.5;
-  font-size: 14px;
-}
+@media (max-width: 540px) {
+  .user {
+    flex-direction: column;
+  }
 
-.dash-info-bank p {
-  margin-bottom: 10px;
-  color: #0D55BA;
+  .main {
+    padding: 10px;
+  }
+
+  .main header {
+    justify-content: center;
+  }
+
+  .user-profile {
+    min-height: 0;
+    text-align: center;
+  }
+
+  .user-profile img {
+    margin: 0;
+
+  }
+
+  .main ul {
+    padding: 10px;
+    width: 557;
+    grid-template-columns: none;
+  }
+  
+  .main header a {
+    margin-left: 2px;
+  }
 }

@@ -1,0 +1,73 @@
+.find {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find .find-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-card {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2em;
+  background-color: #F1F3F6;
+}
+
+.find-card h1 {
+  color: #0D558A;
+  font-size: 3.7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.find-card-content {
+  display: flex;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+
+.find-card-content ul {
+  padding-left: 30px;
+}
+
+.find-card-content ul li {
+  margin-top: 10px;
+  color: #A0A0A0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.find-card-content ul p {
+  text-align: left;
+  color: #0D558A;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.button {
+  margin-bottom: 20px;
+}
+
+.back-link {
+  margin-top: 20px;
+}
+
+@media (max-width: 540px) {
+  section .back-link {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  section .back-link {
+    padding: 14px;
+  }
+}

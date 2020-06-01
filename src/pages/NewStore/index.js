@@ -2,35 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
-import './styles.css';
+import './style.css';
 
-function NewProduct() {
+function NewStore() {
   return (
-    <div className="new-product">
-      <div className="content">
+    <div className="new-store">
+      <div className="store-content">
         <section>
-          <Link to="/store/dashboard" className="back-link">
+          <Link to="/seller/dashboard" className="back-link">
             <FiArrowLeft size={20} color="#F94545"/>
            Voltar no Perfil
           </Link>
-        <h1>Cadastrar um novo Produto</h1>
+        <h1>Cadastrar uma nova Loja</h1>
         </section>
         <form>
           <input
             type="text"  
-            placeholder="Nome do produto" 
+            placeholder="Nome da Loja" 
           />
            <input
             type="text"  
-            placeholder="Preço do produto" 
+            placeholder="Categória da Loja" 
           />
           <input
             type="text" 
-            placeholder="Código do produto"
-          />
-          <input
-            type="text" 
-            placeholder="Número de prestações"
+            placeholder="Endereço da Loja"
           />
           <button className="button" type="submit">Cadastrar</button>
         </form>
@@ -39,4 +35,4 @@ function NewProduct() {
   )
 }
 
-export default NewProduct;
+export default NewStore;
