@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router';
 
 import FindProduct from './pages/FindProduct/';
 
@@ -16,14 +16,11 @@ import Login from './pages/Login/';
 import Register from './pages/Register/';
 
 import Main from './components/Main';
-import ScrollToTop from './components/ScrollTop';
-
-
 import NotFound from './pages/NotFound/';
+import { history } from './history';
 
-export default props => (
-  <Router>
-    <ScrollToTop>
+const Routes = () => (
+  <Router history={history}>
       <Switch>
         <Route exact path="/" component={Main} />
         
@@ -41,6 +38,7 @@ export default props => (
         <Route exact path="/store/new-product" component={NewProduct} />
         <Route component={NotFound} />
       </Switch>
-    </ScrollToTop>
   </Router>
 )
+
+export default Routes;
