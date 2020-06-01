@@ -18,6 +18,7 @@ import Register from './pages/Register/';
 import Main from './components/Main';
 import NotFound from './pages/NotFound/';
 import { history } from './history';
+import PrivateRoute from './components/PrivateRoute';
 
 const Routes = () => (
   <Router history={history}>
@@ -27,16 +28,16 @@ const Routes = () => (
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         
-        <Route exact path="/comprar" component={FindProduct} />
-        <Route exact path="/edit-info-user" component={EditeUser} />
-        <Route exact path="/edit-info-seller" component={EditSeller} />
-        <Route exact path="/edit-info-store" component={EditStore} />
-        <Route exact path="/user/dashboard" component={UserProfile} />
-        <Route exact path="/store/dashboard" component={StoreProfile} />
-        <Route exact path="/seller/dashboard" component={SellerProfile} />
-        <Route exact path="/seller/new-store" component={NewStore} />
-        <Route exact path="/store/new-product" component={NewProduct} />
-        <Route component={NotFound} />
+        <PrivateRoute exact path="/comprar" component={FindProduct} />
+        <PrivateRoute exact path="/edit-info-user" component={EditeUser} />
+        <PrivateRoute exact path="/edit-info-seller" component={EditSeller} />
+        <PrivateRoute exact path="/edit-info-store" component={EditStore} />
+        <PrivateRoute exact path="/user/dashboard" component={UserProfile} />
+        <PrivateRoute exact path="/store/dashboard" component={StoreProfile} />
+        <PrivateRoute exact path="/seller/dashboard" component={SellerProfile} />
+        <PrivateRoute exact path="/seller/new-store" component={NewStore} />
+        <PrivateRoute exact path="/store/new-product" component={NewProduct} />
+        <PrivateRoute component={NotFound} />
       </Switch>
   </Router>
 )
