@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3724df5f.chunk.css",
+    "main.js": "/static/js/main.d6b5e733.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.5a5f3741.js",
+    "static/js/2.d51208ff.chunk.js": "/static/js/2.d51208ff.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.7ac7078123dbc0dfc73994d608208f01.js": "/precache-manifest.7ac7078123dbc0dfc73994d608208f01.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.d51208ff.chunk.js.LICENSE.txt": "/static/js/2.d51208ff.chunk.js.LICENSE.txt",
+    "static/media/analitics.svg": "/static/media/analitics.2ce93c65.svg",
+    "static/media/styles.css": "/static/media/background.cffb3b73.png",
+    "static/media/fall.svg": "/static/media/fall.942f9d2e.svg",
+    "static/media/woman.jpg": "/static/media/woman.bd0ad6b8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a5f3741.js",
+    "static/js/2.d51208ff.chunk.js",
+    "static/css/main.3724df5f.chunk.css",
+    "static/js/main.d6b5e733.chunk.js"
+  ]
+}
